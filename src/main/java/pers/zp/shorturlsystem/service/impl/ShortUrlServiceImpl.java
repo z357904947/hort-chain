@@ -15,6 +15,8 @@ import pers.zp.shorturlsystem.model.ShortUrl;
 import pers.zp.shorturlsystem.service.ShortUrlService;
 import reactor.core.publisher.Mono;
 
+import java.net.URI;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 
@@ -45,28 +47,37 @@ public class ShortUrlServiceImpl implements ShortUrlService {
     }
     public Mono<ShortUrl> longUrlToShortStr(String url,String 后缀) {
 
-        return Mono.just(getShortUrl(url, 后缀))
-                .flatMap(shortUrl->shortUrlInfoDao.save(shortUrl).onErrorResume(throwable -> {
-                    log.error("异常类{},异常信息{}",throwable.getClass().getName(),throwable.getMessage());
-                    if(throwable instanceof DataIntegrityViolationException&& shortUrl.getId()==null){
-                        //如果能找到，且长链相等则直接返回
-                        return shortUrlInfoDao.findByShortUrlInt(shortUrl.getShortUrlInt())
-                                //如果没有查询到数据，则可能只是保存数据出错了。
-                                .switchIfEmpty( Mono.error(()->new RuntimeException("服务异常！")))
-                                //如果能查询到数据，则判断长链是否相等
-                                .filter(a->{
-                                    log.debug("是否相等{}",a.getTargetUrl().equals(url));
-                                    return a.getTargetUrl().equals(url);
-                                })
-                                //如果不等，则加上后缀重新获取次短链
-                                //Mono.defer解决Mono中发射的元素即使是空，switchIfEmpty仍然被调用，即longUrlToShortStr被调用的问题。
-                                .switchIfEmpty(Mono.defer(()->longUrlToShortStr(url,后缀字符串)));
-                    }
-                    return Mono.error(()->new RuntimeException("服务异常！"));
+
+
+        return Mono.just(url)
+                        .filter(a->URI.create(url).isAbsolute())
+                        .switchIfEmpty(Mono.error(new IllegalArgumentException("不是一个有效的长链地址！")))
+                        .flatMap(a->Mono.just(getShortUrl(a, 后缀)))
+                        .flatMap(shortUrl->shortUrlInfoDao.save(shortUrl).onErrorResume(throwable -> {
+                        log.error("异常类{},异常信息{}",throwable.getClass().getName(),throwable.getMessage());
+                        if(throwable instanceof DataIntegrityViolationException&& shortUrl.getId()==null){
+                            //如果能找到，且长链相等则直接返回
+                            return shortUrlInfoDao.findByShortUrlInt(shortUrl.getShortUrlInt())
+                                    //如果没有查询到数据，则可能只是保存数据出错了。
+                                    .switchIfEmpty( Mono.error(()->new RuntimeException("服务异常！")))
+                                    //如果能查询到数据，则判断长链是否相等
+                                    .filter(a->{
+                                        log.debug("是否相等{}",a.getTargetUrl().equals(url));
+                                        return a.getTargetUrl().equals(url);
+                                    })
+                                    //如果不等，则加上后缀重新获取次短链
+                                    //Mono.defer解决Mono中发射的元素即使是空，switchIfEmpty仍然被调用，即longUrlToShortStr被调用的问题。
+                                    .switchIfEmpty(Mono.defer(()->longUrlToShortStr(url,后缀字符串)));
+                        }
+                        return Mono.error(()->new RuntimeException("服务异常！"));
                 }));
     }
 
     private ShortUrl getShortUrl(String url, String 后缀) {
+       if(! URI.create(url).isAbsolute())
+       {
+           throw new IllegalArgumentException("SSSSSSSSSSSSS");
+       }
         HashFunction hashFunction = Hashing.murmur3_32_fixed();
         int hashInt ;
         if(后缀 == null)
