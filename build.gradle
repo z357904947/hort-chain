@@ -1,0 +1,40 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.7'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'pers.zp'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    //先从本地库找
+    maven { url 'file:///C:/repository'}
+    maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
+    implementation 'dev.miku:r2dbc-mysql'
+    implementation 'io.r2dbc:r2dbc-pool'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.projectreactor:reactor-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

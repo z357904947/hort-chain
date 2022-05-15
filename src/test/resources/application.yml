@@ -1,0 +1,9 @@
+spring:
+  r2dbc:
+    name: r2dbc
+    url: r2dbcs:mysql://127.0.0.1:3306/zp_test?serverTimezone=GMT&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    pool:
+      enabled: true
+      validation-query: SELECT 1
