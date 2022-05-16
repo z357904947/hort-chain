@@ -1,6 +1,7 @@
 package pers.zp.shorturlsystem.service;
 
 import pers.zp.shorturlsystem.model.ShortUrl;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface ShortUrlService {
@@ -19,5 +20,12 @@ public interface ShortUrlService {
      * @return
      */
     Mono<ShortUrl> getUrlByShortStr(String str);
+
+
+    /**
+     * 实时系统短链数据总量
+     * @return
+     */
+    public Flux<Integer> sumData();
 
 }

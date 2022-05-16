@@ -102,4 +102,15 @@ public class ShortUrlApi {
         });
     }
 
+
+    @GetMapping(value = "/show/sum" ,produces = "text/event-stream")
+    public Flux  test()
+    {
+        //参照create方法的注释写的一个通过事件回调驱动主动通知前端简单方法。
+        return shortUrlService.sumData();
+
+
+    }
+
+
 }
