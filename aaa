@@ -1,0 +1,1651 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@8.19.2
+2 info using node@v16.18.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:C:\Users\zyg\.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:D:\nodejs\node_cache\etc\npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 1ms
+15 timing config:load:credentials Completed in 1ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 10ms
+18 timing npm:load:configload Completed in 10ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm install cnpm
+22 verbose argv "install" "--global" "cnpm" "--registry" "https://registry.npm.taobao.org"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing config:load:flatten Completed in 3ms
+25 timing npm:load:display Completed in 4ms
+26 verbose logfile logs-max:10 dir:D:\configuration\nodejs\node_cache\_logs
+27 verbose logfile D:\configuration\nodejs\node_cache\_logs\2023-03-07T09_03_36_834Z-debug-0.log
+28 timing npm:load:logFile Completed in 5ms
+29 timing npm:load:timers Completed in 0ms
+30 timing npm:load:configScope Completed in 0ms
+31 timing npm:load Completed in 23ms
+32 timing arborist:ctor Completed in 0ms
+33 silly logfile start cleaning logs, removing 2 files
+34 timing idealTree:init Completed in 6ms
+35 timing idealTree:userRequests Completed in 3ms
+36 silly idealTree buildDeps
+37 silly fetch manifest cnpm@*
+38 silly logfile done cleaning log files
+39 http fetch GET 200 https://registry.npmmirror.com/cnpm 199ms (cache hit)
+40 silly placeDep ROOT cnpm@9.0.1 OK for:  want: *
+41 silly fetch manifest auto-correct@^1.0.0
+42 silly fetch manifest bagpipe@^0.3.5
+43 silly fetch manifest commander@~2.10.0
+44 silly fetch manifest cross-spawn@~0.2.8
+45 silly fetch manifest debug@^4.3.4
+46 silly fetch manifest giturl@^1.0.0
+47 silly fetch manifest ini@^1.3.4
+48 silly fetch manifest npm@^8.12.1
+49 silly fetch manifest npm-request@^1.0.0
+50 silly fetch manifest npminstall@^7.0.0
+51 silly fetch manifest open@^8.2.1
+52 silly fetch manifest urllib@^3.1.0
+53 http fetch GET 200 https://registry.npmmirror.com/cross-spawn 71ms (cache hit)
+54 http fetch GET 200 https://registry.npmmirror.com/giturl 144ms (cache hit)
+55 http fetch GET 200 https://registry.npmmirror.com/commander 148ms (cache hit)
+56 http fetch GET 200 https://registry.npmmirror.com/debug 156ms (cache hit)
+57 http fetch GET 200 https://registry.npmmirror.com/ini 162ms (cache hit)
+58 http fetch GET 200 https://registry.npmmirror.com/auto-correct 166ms (cache hit)
+59 http fetch GET 200 https://registry.npmmirror.com/npm-request 170ms (cache hit)
+60 http fetch GET 200 https://registry.npmmirror.com/urllib 168ms (cache hit)
+61 http fetch GET 200 https://registry.npmmirror.com/npm 176ms (cache hit)
+62 http fetch GET 200 https://registry.npmmirror.com/bagpipe 198ms (cache hit)
+63 http fetch GET 200 https://registry.npmmirror.com/npminstall 196ms (cache hit)
+64 http fetch GET 200 https://registry.npmmirror.com/open 202ms (cache hit)
+65 timing idealTree:#root Completed in 418ms
+66 silly placeDep node_modules/cnpm auto-correct@1.0.0 OK for: cnpm@9.0.1 want: ^1.0.0
+67 silly placeDep node_modules/cnpm bagpipe@0.3.5 OK for: cnpm@9.0.1 want: ^0.3.5
+68 silly placeDep node_modules/cnpm commander@2.10.0 OK for: cnpm@9.0.1 want: ~2.10.0
+69 silly placeDep node_modules/cnpm cross-spawn@0.2.9 OK for: cnpm@9.0.1 want: ~0.2.8
+70 silly placeDep node_modules/cnpm debug@4.3.4 OK for: cnpm@9.0.1 want: ^4.3.4
+71 silly placeDep node_modules/cnpm giturl@1.0.1 OK for: cnpm@9.0.1 want: ^1.0.0
+72 silly placeDep node_modules/cnpm ini@1.3.8 OK for: cnpm@9.0.1 want: ^1.3.4
+73 silly placeDep node_modules/cnpm npm@8.19.4 OK for: cnpm@9.0.1 want: ^8.12.1
+74 silly placeDep node_modules/cnpm npm-request@1.0.0 OK for: cnpm@9.0.1 want: ^1.0.0
+75 silly placeDep node_modules/cnpm npminstall@7.5.2 OK for: cnpm@9.0.1 want: ^7.0.0
+76 silly placeDep node_modules/cnpm open@8.4.2 OK for: cnpm@9.0.1 want: ^8.2.1
+77 silly placeDep node_modules/cnpm urllib@3.11.0 OK for: cnpm@9.0.1 want: ^3.1.0
+78 silly fetch manifest graceful-readlink@>= 1.0.0
+79 silly fetch manifest lru-cache@^2.5.0
+80 silly fetch manifest ms@2.1.2
+81 silly fetch manifest urllib@^2.8.0
+82 silly fetch manifest @npmcli/arborist@^6.1.3
+83 silly fetch manifest @zkochan/cmd-shim@^5.4.0
+84 silly fetch manifest await-event@^2.1.0
+85 silly fetch manifest bin-links@^2.3.0
+86 silly fetch manifest binary-mirror-config@^1.19.0
+87 silly fetch manifest bytes@^3.1.0
+88 silly fetch manifest cacheable-lookup@^6.1.0
+89 silly fetch manifest chalk@^2.4.2
+90 silly fetch manifest destroy@^1.0.4
+91 silly fetch manifest detect-libc@^2.0.1
+92 silly fetch manifest execa@^5.1.1
+93 silly fetch manifest fs-extra@^7.0.1
+94 silly fetch manifest globby@^11.1.0
+95 silly fetch manifest minimatch@^3.0.4
+96 silly fetch manifest minimist@^1.2.0
+97 silly fetch manifest moment@^2.24.0
+98 silly fetch manifest ms@^2.1.1
+99 silly fetch manifest node-gyp@^9.0.0
+100 silly fetch manifest node-homedir@^1.1.1
+101 silly fetch manifest normalize-package-data@^5.0.0
+102 silly fetch manifest npm-normalize-package-bin@^3.0.0
+103 silly fetch manifest npm-package-arg@^8.1.5
+104 silly fetch manifest ora@^4.0.5
+105 silly fetch manifest p-map@^2.1.0
+106 silly fetch manifest pacote@^15.0.0
+107 silly fetch manifest rc@^1.2.8
+108 silly fetch manifest semver@^7.0.0
+109 silly fetch manifest tar@^6.0.0
+110 silly fetch manifest define-lazy-prop@^2.0.0
+111 silly fetch manifest is-docker@^2.1.1
+112 silly fetch manifest is-wsl@^2.2.0
+113 silly fetch manifest default-user-agent@^1.0.0
+114 silly fetch manifest digest-header@^1.0.0
+115 silly fetch manifest form-data-encoder@^1.7.2
+116 silly fetch manifest formdata-node@^4.3.3
+117 silly fetch manifest formstream@^1.1.1
+118 silly fetch manifest mime-types@^2.1.35
+119 silly fetch manifest pump@^3.0.0
+120 silly fetch manifest undici@^5.6.0
+121 http fetch GET 200 https://registry.npmmirror.com/lru-cache 140ms (cache hit)
+122 http fetch GET 200 https://registry.npmmirror.com/ms 141ms (cache hit)
+123 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2farborist 141ms (cache hit)
+124 http fetch GET 200 https://registry.npmmirror.com/binary-mirror-config 144ms (cache hit)
+125 http fetch GET 200 https://registry.npmmirror.com/graceful-readlink 150ms (cache hit)
+126 http fetch GET 200 https://registry.npmmirror.com/execa 143ms (cache hit)
+127 http fetch GET 200 https://registry.npmmirror.com/cacheable-lookup 151ms (cache hit)
+128 http fetch GET 200 https://registry.npmmirror.com/bin-links 156ms (cache hit)
+129 http fetch GET 200 https://registry.npmmirror.com/await-event 156ms (cache hit)
+130 http fetch GET 200 https://registry.npmmirror.com/fs-extra 153ms (cache hit)
+131 http fetch GET 200 https://registry.npmmirror.com/bytes 162ms (cache hit)
+132 http fetch GET 200 https://registry.npmmirror.com/minimatch 175ms (cache hit)
+133 http fetch GET 200 https://registry.npmmirror.com/destroy 179ms (cache hit)
+134 http fetch GET 200 https://registry.npmmirror.com/moment 187ms (cache hit)
+135 http fetch GET 200 https://registry.npmmirror.com/node-homedir 189ms (cache hit)
+136 http fetch GET 200 https://registry.npmmirror.com/normalize-package-data 189ms (cache hit)
+137 http fetch GET 200 https://registry.npmmirror.com/ms 196ms (cache hit)
+138 http fetch GET 200 https://registry.npmmirror.com/globby 201ms (cache hit)
+139 http fetch GET 200 https://registry.npmmirror.com/npm-normalize-package-bin 196ms (cache hit)
+140 http fetch GET 200 https://registry.npmmirror.com/ora 196ms (cache hit)
+141 http fetch GET 200 https://registry.npmmirror.com/node-gyp 200ms (cache hit)
+142 http fetch GET 200 https://registry.npmmirror.com/rc 201ms (cache hit)
+143 http fetch GET 200 https://registry.npmmirror.com/define-lazy-prop 224ms (cache hit)
+144 http fetch GET 200 https://registry.npmmirror.com/npm-package-arg 227ms (cache hit)
+145 http fetch GET 200 https://registry.npmmirror.com/pacote 227ms (cache hit)
+146 http fetch GET 200 https://registry.npmmirror.com/p-map 229ms (cache hit)
+147 http fetch GET 200 https://registry.npmmirror.com/default-user-agent 224ms (cache hit)
+148 http fetch GET 200 https://registry.npmmirror.com/is-docker 233ms (cache hit)
+149 http fetch GET 200 https://registry.npmmirror.com/form-data-encoder 230ms (cache hit)
+150 http fetch GET 200 https://registry.npmmirror.com/tar 236ms (cache hit)
+151 http fetch GET 200 https://registry.npmmirror.com/is-wsl 234ms (cache hit)
+152 http fetch GET 200 https://registry.npmmirror.com/digest-header 234ms (cache hit)
+153 http fetch GET 200 https://registry.npmmirror.com/semver 239ms (cache hit)
+154 http fetch GET 200 https://registry.npmmirror.com/detect-libc 248ms (cache hit)
+155 http fetch GET 200 https://registry.npmmirror.com/minimist 245ms (cache hit)
+156 http fetch GET 200 https://registry.npmmirror.com/chalk 249ms (cache hit)
+157 http fetch GET 200 https://registry.npmmirror.com/mime-types 247ms (cache hit)
+158 http fetch GET 200 https://registry.npmmirror.com/pump 247ms (cache hit)
+159 http fetch GET 200 https://registry.npmmirror.com/formdata-node 249ms (cache hit)
+160 http fetch GET 200 https://registry.npmmirror.com/undici 249ms (cache hit)
+161 http fetch GET 200 https://registry.npmmirror.com/formstream 252ms (cache hit)
+162 http fetch GET 200 https://registry.npmmirror.com/@zkochan%2fcmd-shim 301ms (cache hit)
+163 timing idealTree:node_modules/cnpm Completed in 320ms
+164 timing idealTree:node_modules/cnpm/node_modules/auto-correct Completed in 0ms
+165 timing idealTree:node_modules/cnpm/node_modules/bagpipe Completed in 0ms
+166 silly placeDep node_modules/cnpm graceful-readlink@1.0.1 OK for: commander@2.10.0 want: >= 1.0.0
+167 timing idealTree:node_modules/cnpm/node_modules/commander Completed in 1ms
+168 silly placeDep node_modules/cnpm lru-cache@2.7.3 OK for: cross-spawn@0.2.9 want: ^2.5.0
+169 timing idealTree:node_modules/cnpm/node_modules/cross-spawn Completed in 0ms
+170 silly placeDep node_modules/cnpm ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+171 timing idealTree:node_modules/cnpm/node_modules/debug Completed in 2ms
+172 timing idealTree:node_modules/cnpm/node_modules/giturl Completed in 0ms
+173 timing idealTree:node_modules/cnpm/node_modules/graceful-readlink Completed in 0ms
+174 timing idealTree:node_modules/cnpm/node_modules/ini Completed in 0ms
+175 timing idealTree:node_modules/cnpm/node_modules/lru-cache Completed in 0ms
+176 timing idealTree:node_modules/cnpm/node_modules/ms Completed in 0ms
+177 timing idealTree:node_modules/cnpm/node_modules/npm Completed in 0ms
+178 silly placeDep node_modules/cnpm/node_modules/npm-request urllib@2.40.0 OK for: npm-request@1.0.0 want: ^2.8.0
+179 silly fetch manifest any-promise@^1.3.0
+180 silly fetch manifest content-type@^1.0.2
+181 silly fetch manifest debug@^2.6.9
+182 silly fetch manifest ee-first@~1.1.1
+183 silly fetch manifest formstream@^1.1.0
+184 silly fetch manifest humanize-ms@^1.2.0
+185 silly fetch manifest iconv-lite@^0.4.15
+186 silly fetch manifest ip@^1.1.5
+187 silly fetch manifest proxy-agent@^5.0.0
+188 silly fetch manifest qs@^6.4.0
+189 silly fetch manifest statuses@^1.3.1
+190 silly fetch manifest utility@^1.16.1
+191 http fetch GET 200 https://registry.npmmirror.com/content-type 139ms (cache hit)
+192 http fetch GET 200 https://registry.npmmirror.com/ee-first 139ms (cache hit)
+193 http fetch GET 200 https://registry.npmmirror.com/proxy-agent 136ms (cache hit)
+194 http fetch GET 200 https://registry.npmmirror.com/iconv-lite 139ms (cache hit)
+195 http fetch GET 200 https://registry.npmmirror.com/utility 136ms (cache hit)
+196 http fetch GET 200 https://registry.npmmirror.com/humanize-ms 141ms (cache hit)
+197 http fetch GET 200 https://registry.npmmirror.com/qs 138ms (cache hit)
+198 http fetch GET 200 https://registry.npmmirror.com/statuses 140ms (cache hit)
+199 http fetch GET 200 https://registry.npmmirror.com/ip 143ms (cache hit)
+200 http fetch GET 200 https://registry.npmmirror.com/any-promise 356ms (cache hit)
+201 timing idealTree:node_modules/cnpm/node_modules/npm-request Completed in 358ms
+202 silly placeDep node_modules/cnpm @npmcli/arborist@6.2.4 OK for: npminstall@7.5.2 want: ^6.1.3
+203 silly placeDep node_modules/cnpm @zkochan/cmd-shim@5.4.1 OK for: npminstall@7.5.2 want: ^5.4.0
+204 silly placeDep node_modules/cnpm await-event@2.1.0 OK for: npminstall@7.5.2 want: ^2.1.0
+205 silly placeDep node_modules/cnpm bin-links@2.3.0 OK for: npminstall@7.5.2 want: ^2.3.0
+206 silly placeDep node_modules/cnpm binary-mirror-config@1.41.0 OK for: npminstall@7.5.2 want: ^1.19.0
+207 silly placeDep node_modules/cnpm bytes@3.1.2 OK for: npminstall@7.5.2 want: ^3.1.0
+208 silly placeDep node_modules/cnpm cacheable-lookup@6.1.0 OK for: npminstall@7.5.2 want: ^6.1.0
+209 silly placeDep node_modules/cnpm chalk@2.4.2 OK for: npminstall@7.5.2 want: ^2.4.2
+210 silly placeDep node_modules/cnpm destroy@1.2.0 OK for: npminstall@7.5.2 want: ^1.0.4
+211 silly placeDep node_modules/cnpm detect-libc@2.0.1 OK for: npminstall@7.5.2 want: ^2.0.1
+212 silly placeDep node_modules/cnpm execa@5.1.1 OK for: npminstall@7.5.2 want: ^5.1.1
+213 silly placeDep node_modules/cnpm fs-extra@7.0.1 OK for: npminstall@7.5.2 want: ^7.0.1
+214 silly placeDep node_modules/cnpm globby@11.1.0 OK for: npminstall@7.5.2 want: ^11.1.0
+215 silly placeDep node_modules/cnpm minimatch@3.1.2 OK for: npminstall@7.5.2 want: ^3.0.4
+216 silly placeDep node_modules/cnpm minimist@1.2.8 OK for: npminstall@7.5.2 want: ^1.2.0
+217 silly placeDep node_modules/cnpm moment@2.29.4 OK for: npminstall@7.5.2 want: ^2.24.0
+218 silly placeDep node_modules/cnpm node-gyp@9.3.1 OK for: npminstall@7.5.2 want: ^9.0.0
+219 silly placeDep node_modules/cnpm node-homedir@1.1.1 OK for: npminstall@7.5.2 want: ^1.1.1
+220 silly placeDep node_modules/cnpm normalize-package-data@5.0.0 OK for: npminstall@7.5.2 want: ^5.0.0
+221 silly placeDep node_modules/cnpm npm-normalize-package-bin@3.0.0 OK for: npminstall@7.5.2 want: ^3.0.0
+222 silly placeDep node_modules/cnpm npm-package-arg@8.1.5 OK for: npminstall@7.5.2 want: ^8.1.5
+223 silly placeDep node_modules/cnpm ora@4.1.1 OK for: npminstall@7.5.2 want: ^4.0.5
+224 silly placeDep node_modules/cnpm p-map@2.1.0 OK for: npminstall@7.5.2 want: ^2.1.0
+225 silly placeDep node_modules/cnpm pacote@15.1.1 OK for: npminstall@7.5.2 want: ^15.0.0
+226 silly placeDep node_modules/cnpm rc@1.2.8 OK for: npminstall@7.5.2 want: ^1.2.8
+227 silly placeDep node_modules/cnpm semver@7.3.8 OK for: npminstall@7.5.2 want: ^7.0.0
+228 silly placeDep node_modules/cnpm tar@6.1.13 OK for: npminstall@7.5.2 want: ^6.0.0
+229 silly fetch manifest @isaacs/string-locale-compare@^1.1.0
+230 silly fetch manifest @npmcli/fs@^3.1.0
+231 silly fetch manifest @npmcli/installed-package-contents@^2.0.2
+232 silly fetch manifest @npmcli/map-workspaces@^3.0.2
+233 silly fetch manifest @npmcli/metavuln-calculator@^5.0.0
+234 silly fetch manifest @npmcli/name-from-folder@^2.0.0
+235 silly fetch manifest @npmcli/node-gyp@^3.0.0
+236 silly fetch manifest @npmcli/package-json@^3.0.0
+237 silly fetch manifest @npmcli/query@^3.0.0
+238 silly fetch manifest @npmcli/run-script@^6.0.0
+239 silly fetch manifest bin-links@^4.0.1
+240 silly fetch manifest cacache@^17.0.4
+241 silly fetch manifest common-ancestor-path@^1.0.1
+242 silly fetch manifest hosted-git-info@^6.1.1
+243 silly fetch manifest json-parse-even-better-errors@^3.0.0
+244 silly fetch manifest json-stringify-nice@^1.1.4
+245 silly fetch manifest minimatch@^6.1.6
+246 silly fetch manifest nopt@^7.0.0
+247 silly fetch manifest npm-install-checks@^6.0.0
+248 silly fetch manifest npm-package-arg@^10.1.0
+249 silly fetch manifest npm-pick-manifest@^8.0.1
+250 silly fetch manifest npm-registry-fetch@^14.0.3
+251 silly fetch manifest npmlog@^7.0.1
+252 silly fetch manifest parse-conflict-json@^3.0.0
+253 silly fetch manifest proc-log@^3.0.0
+254 silly fetch manifest promise-all-reject-late@^1.0.0
+255 silly fetch manifest promise-call-limit@^1.0.1
+256 silly fetch manifest read-package-json-fast@^3.0.2
+257 silly fetch manifest ssri@^10.0.1
+258 silly fetch manifest treeverse@^3.0.0
+259 silly fetch manifest walk-up-path@^1.0.0
+260 silly fetch manifest cmd-extension@^1.0.2
+261 silly fetch manifest graceful-fs@^4.2.10
+262 silly fetch manifest is-windows@^1.0.2
+263 silly fetch manifest cmd-shim@^4.0.1
+264 silly fetch manifest mkdirp-infer-owner@^2.0.0
+265 silly fetch manifest npm-normalize-package-bin@^1.0.0
+266 silly fetch manifest read-cmd-shim@^2.0.0
+267 silly fetch manifest rimraf@^3.0.0
+268 silly fetch manifest write-file-atomic@^3.0.3
+269 silly fetch manifest ansi-styles@^3.2.1
+270 silly fetch manifest escape-string-regexp@^1.0.5
+271 silly fetch manifest supports-color@^5.3.0
+272 silly fetch manifest cross-spawn@^7.0.3
+273 silly fetch manifest get-stream@^6.0.0
+274 silly fetch manifest human-signals@^2.1.0
+275 silly fetch manifest is-stream@^2.0.0
+276 silly fetch manifest merge-stream@^2.0.0
+277 silly fetch manifest npm-run-path@^4.0.1
+278 silly fetch manifest onetime@^5.1.2
+279 silly fetch manifest signal-exit@^3.0.3
+280 silly fetch manifest strip-final-newline@^2.0.0
+281 silly fetch manifest graceful-fs@^4.1.2
+282 silly fetch manifest jsonfile@^4.0.0
+283 silly fetch manifest universalify@^0.1.0
+284 silly fetch manifest array-union@^2.1.0
+285 silly fetch manifest dir-glob@^3.0.1
+286 silly fetch manifest fast-glob@^3.2.9
+287 silly fetch manifest ignore@^5.2.0
+288 silly fetch manifest merge2@^1.4.1
+289 silly fetch manifest slash@^3.0.0
+290 silly fetch manifest brace-expansion@^1.1.7
+291 silly fetch manifest env-paths@^2.2.0
+292 silly fetch manifest glob@^7.1.4
+293 silly fetch manifest graceful-fs@^4.2.6
+294 silly fetch manifest make-fetch-happen@^10.0.3
+295 silly fetch manifest nopt@^6.0.0
+296 silly fetch manifest npmlog@^6.0.0
+297 silly fetch manifest rimraf@^3.0.2
+298 silly fetch manifest which@^2.0.2
+299 silly fetch manifest hosted-git-info@^6.0.0
+300 silly fetch manifest is-core-module@^2.8.1
+301 silly fetch manifest validate-npm-package-license@^3.0.4
+302 silly fetch manifest hosted-git-info@^4.0.1
+303 silly fetch manifest validate-npm-package-name@^3.0.0
+304 silly fetch manifest chalk@^3.0.0
+305 silly fetch manifest cli-cursor@^3.1.0
+306 silly fetch manifest cli-spinners@^2.2.0
+307 silly fetch manifest is-interactive@^1.0.0
+308 silly fetch manifest log-symbols@^3.0.0
+309 silly fetch manifest mute-stream@0.0.8
+310 silly fetch manifest strip-ansi@^6.0.0
+311 silly fetch manifest wcwidth@^1.0.1
+312 silly fetch manifest @npmcli/git@^4.0.0
+313 silly fetch manifest @npmcli/installed-package-contents@^2.0.1
+314 silly fetch manifest @npmcli/promise-spawn@^6.0.1
+315 silly fetch manifest cacache@^17.0.0
+316 silly fetch manifest fs-minipass@^3.0.0
+317 silly fetch manifest minipass@^4.0.0
+318 silly fetch manifest npm-package-arg@^10.0.0
+319 silly fetch manifest npm-packlist@^7.0.0
+320 silly fetch manifest npm-pick-manifest@^8.0.0
+321 silly fetch manifest npm-registry-fetch@^14.0.0
+322 silly fetch manifest promise-retry@^2.0.1
+323 silly fetch manifest read-package-json@^6.0.0
+324 silly fetch manifest read-package-json-fast@^3.0.0
+325 silly fetch manifest sigstore@^1.0.0
+326 silly fetch manifest ssri@^10.0.0
+327 silly fetch manifest deep-extend@^0.6.0
+328 silly fetch manifest strip-json-comments@~2.0.1
+329 silly fetch manifest lru-cache@^6.0.0
+330 silly fetch manifest chownr@^2.0.0
+331 silly fetch manifest fs-minipass@^2.0.0
+332 silly fetch manifest minizlib@^2.1.1
+333 silly fetch manifest mkdirp@^1.0.3
+334 silly fetch manifest yallist@^4.0.0
+335 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fmap-workspaces 237ms (cache hit)
+336 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fpackage-json 235ms (cache hit)
+337 http fetch GET 200 https://registry.npmmirror.com/json-parse-even-better-errors 231ms (cache hit)
+338 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fmetavuln-calculator 239ms (cache hit)
+339 http fetch GET 200 https://registry.npmmirror.com/common-ancestor-path 233ms (cache hit)
+340 http fetch GET 200 https://registry.npmmirror.com/@isaacs%2fstring-locale-compare 243ms (cache hit)
+341 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2finstalled-package-contents 242ms (cache hit)
+342 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fquery 236ms (cache hit)
+343 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2frun-script 236ms (cache hit)
+344 http fetch GET 200 https://registry.npmmirror.com/nopt 234ms (cache hit)
+345 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fnode-gyp 241ms (cache hit)
+346 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fname-from-folder 242ms (cache hit)
+347 http fetch GET 200 https://registry.npmmirror.com/npm-pick-manifest 235ms (cache hit)
+348 http fetch GET 200 https://registry.npmmirror.com/cacache 238ms (cache hit)
+349 http fetch GET 200 https://registry.npmmirror.com/parse-conflict-json 258ms (cache hit)
+350 http fetch GET 200 https://registry.npmmirror.com/npm-registry-fetch 260ms (cache hit)
+351 http fetch GET 200 https://registry.npmmirror.com/npm-install-checks 266ms (cache hit)
+352 http fetch GET 200 https://registry.npmmirror.com/ssri 261ms (cache hit)
+353 http fetch GET 200 https://registry.npmmirror.com/promise-call-limit 262ms (cache hit)
+354 http fetch GET 200 https://registry.npmmirror.com/npmlog 266ms (cache hit)
+355 http fetch GET 200 https://registry.npmmirror.com/promise-all-reject-late 263ms (cache hit)
+356 http fetch GET 200 https://registry.npmmirror.com/json-stringify-nice 269ms (cache hit)
+357 http fetch GET 200 https://registry.npmmirror.com/treeverse 264ms (cache hit)
+358 http fetch GET 200 https://registry.npmmirror.com/proc-log 268ms (cache hit)
+359 http fetch GET 200 https://registry.npmmirror.com/walk-up-path 265ms (cache hit)
+360 http fetch GET 200 https://registry.npmmirror.com/read-package-json-fast 267ms (cache hit)
+361 http fetch GET 200 https://registry.npmmirror.com/hosted-git-info 275ms (cache hit)
+362 http fetch GET 200 https://registry.npmmirror.com/cmd-extension 267ms (cache hit)
+363 http fetch GET 200 https://registry.npmmirror.com/write-file-atomic 291ms (cache hit)
+364 http fetch GET 200 https://registry.npmmirror.com/is-windows 294ms (cache hit)
+365 http fetch GET 200 https://registry.npmmirror.com/mkdirp-infer-owner 294ms (cache hit)
+366 http fetch GET 200 https://registry.npmmirror.com/cmd-shim 294ms (cache hit)
+367 http fetch GET 200 https://registry.npmmirror.com/rimraf 297ms (cache hit)
+368 http fetch GET 200 https://registry.npmmirror.com/supports-color 300ms (cache hit)
+369 http fetch GET 200 https://registry.npmmirror.com/graceful-fs 306ms (cache hit)
+370 http fetch GET 200 https://registry.npmmirror.com/get-stream 302ms (cache hit)
+371 http fetch GET 200 https://registry.npmmirror.com/escape-string-regexp 304ms (cache hit)
+372 http fetch GET 200 https://registry.npmmirror.com/is-stream 303ms (cache hit)
+373 http fetch GET 200 https://registry.npmmirror.com/read-cmd-shim 307ms (cache hit)
+374 http fetch GET 200 https://registry.npmmirror.com/ansi-styles 307ms (cache hit)
+375 http fetch GET 200 https://registry.npmmirror.com/merge-stream 305ms (cache hit)
+376 http fetch GET 200 https://registry.npmmirror.com/npm-run-path 308ms (cache hit)
+377 http fetch GET 200 https://registry.npmmirror.com/human-signals 324ms (cache hit)
+378 http fetch GET 200 https://registry.npmmirror.com/jsonfile 321ms (cache hit)
+379 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2ffs 351ms (cache hit)
+380 http fetch GET 200 https://registry.npmmirror.com/signal-exit 326ms (cache hit)
+381 http fetch GET 200 https://registry.npmmirror.com/onetime 328ms (cache hit)
+382 http fetch GET 200 https://registry.npmmirror.com/array-union 327ms (cache hit)
+383 http fetch GET 200 https://registry.npmmirror.com/graceful-fs 331ms (cache hit)
+384 http fetch GET 200 https://registry.npmmirror.com/universalify 332ms (cache hit)
+385 http fetch GET 200 https://registry.npmmirror.com/merge2 333ms (cache hit)
+386 http fetch GET 200 https://registry.npmmirror.com/fast-glob 338ms (cache hit)
+387 http fetch GET 200 https://registry.npmmirror.com/glob 336ms (cache hit)
+388 http fetch GET 200 https://registry.npmmirror.com/strip-final-newline 345ms (cache hit)
+389 http fetch GET 200 https://registry.npmmirror.com/dir-glob 343ms (cache hit)
+390 http fetch GET 200 https://registry.npmmirror.com/ignore 343ms (cache hit)
+391 http fetch GET 200 https://registry.npmmirror.com/brace-expansion 342ms (cache hit)
+392 http fetch GET 200 https://registry.npmmirror.com/is-core-module 356ms (cache hit)
+393 http fetch GET 200 https://registry.npmmirror.com/which 358ms (cache hit)
+394 http fetch GET 200 https://registry.npmmirror.com/env-paths 365ms (cache hit)
+395 http fetch GET 200 https://registry.npmmirror.com/npmlog 361ms (cache hit)
+396 http fetch GET 200 https://registry.npmmirror.com/nopt 362ms (cache hit)
+397 http fetch GET 200 https://registry.npmmirror.com/graceful-fs 367ms (cache hit)
+398 http fetch GET 200 https://registry.npmmirror.com/hosted-git-info 364ms (cache hit)
+399 http fetch GET 200 https://registry.npmmirror.com/cli-cursor 371ms (cache hit)
+400 http fetch GET 200 https://registry.npmmirror.com/rimraf 377ms (cache hit)
+401 http fetch GET 200 https://registry.npmmirror.com/validate-npm-package-license 375ms (cache hit)
+402 http fetch GET 200 https://registry.npmmirror.com/cli-spinners 374ms (cache hit)
+403 http fetch GET 200 https://registry.npmmirror.com/make-fetch-happen 379ms (cache hit)
+404 http fetch GET 200 https://registry.npmmirror.com/validate-npm-package-name 378ms (cache hit)
+405 http fetch GET 200 https://registry.npmmirror.com/hosted-git-info 389ms (cache hit)
+406 http fetch GET 200 https://registry.npmmirror.com/strip-ansi 393ms (cache hit)
+407 http fetch GET 200 https://registry.npmmirror.com/is-interactive 395ms (cache hit)
+408 http fetch GET 200 https://registry.npmmirror.com/log-symbols 396ms (cache hit)
+409 http fetch GET 200 https://registry.npmmirror.com/wcwidth 396ms (cache hit)
+410 http fetch GET 200 https://registry.npmmirror.com/mute-stream 397ms (cache hit)
+411 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2finstalled-package-contents 398ms (cache hit)
+412 http fetch GET 200 https://registry.npmmirror.com/promise-retry 394ms (cache hit)
+413 http fetch GET 200 https://registry.npmmirror.com/npm-pick-manifest 399ms (cache hit)
+414 http fetch GET 200 https://registry.npmmirror.com/npm-packlist 401ms (cache hit)
+415 http fetch GET 200 https://registry.npmmirror.com/npm-registry-fetch 401ms (cache hit)
+416 http fetch GET 200 https://registry.npmmirror.com/minipass 403ms (cache hit)
+417 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fgit 405ms (cache hit)
+418 http fetch GET 200 https://registry.npmmirror.com/cacache 415ms (cache hit)
+419 http fetch GET 200 https://registry.npmmirror.com/slash 431ms (cache hit)
+420 http fetch GET 200 https://registry.npmmirror.com/sigstore 414ms (cache hit)
+421 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fpromise-spawn 426ms (cache hit)
+422 http fetch GET 200 https://registry.npmmirror.com/chownr 420ms (cache hit)
+423 http fetch GET 200 https://registry.npmmirror.com/read-package-json 426ms (cache hit)
+424 http fetch GET 200 https://registry.npmmirror.com/fs-minipass 436ms (cache hit)
+425 http fetch GET 200 https://registry.npmmirror.com/strip-json-comments 427ms (cache hit)
+426 http fetch GET 200 https://registry.npmmirror.com/ssri 429ms (cache hit)
+427 http fetch GET 200 https://registry.npmmirror.com/fs-minipass 430ms (cache hit)
+428 http fetch GET 200 https://registry.npmmirror.com/deep-extend 433ms (cache hit)
+429 http fetch GET 200 https://registry.npmmirror.com/read-package-json-fast 437ms (cache hit)
+430 http fetch GET 200 https://registry.npmmirror.com/mkdirp 433ms (cache hit)
+431 http fetch GET 200 https://registry.npmmirror.com/minizlib 434ms (cache hit)
+432 http fetch GET 200 https://registry.npmmirror.com/yallist 433ms (cache hit)
+433 timing idealTree:node_modules/cnpm/node_modules/npminstall Completed in 517ms
+434 silly placeDep node_modules/cnpm @isaacs/string-locale-compare@1.1.0 OK for: @npmcli/arborist@6.2.4 want: ^1.1.0
+435 silly placeDep node_modules/cnpm @npmcli/fs@3.1.0 OK for: @npmcli/arborist@6.2.4 want: ^3.1.0
+436 silly placeDep node_modules/cnpm @npmcli/installed-package-contents@2.0.2 OK for: @npmcli/arborist@6.2.4 want: ^2.0.2
+437 silly placeDep node_modules/cnpm @npmcli/map-workspaces@3.0.2 OK for: @npmcli/arborist@6.2.4 want: ^3.0.2
+438 silly placeDep node_modules/cnpm @npmcli/metavuln-calculator@5.0.0 OK for: @npmcli/arborist@6.2.4 want: ^5.0.0
+439 silly placeDep node_modules/cnpm @npmcli/name-from-folder@2.0.0 OK for: @npmcli/arborist@6.2.4 want: ^2.0.0
+440 silly placeDep node_modules/cnpm @npmcli/node-gyp@3.0.0 OK for: @npmcli/arborist@6.2.4 want: ^3.0.0
+441 silly placeDep node_modules/cnpm @npmcli/package-json@3.0.0 OK for: @npmcli/arborist@6.2.4 want: ^3.0.0
+442 silly placeDep node_modules/cnpm @npmcli/query@3.0.0 OK for: @npmcli/arborist@6.2.4 want: ^3.0.0
+443 silly placeDep node_modules/cnpm @npmcli/run-script@6.0.0 OK for: @npmcli/arborist@6.2.4 want: ^6.0.0
+444 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist bin-links@4.0.1 OK for: @npmcli/arborist@6.2.4 want: ^4.0.1
+445 silly placeDep node_modules/cnpm cacache@17.0.4 OK for: @npmcli/arborist@6.2.4 want: ^17.0.4
+446 silly placeDep node_modules/cnpm common-ancestor-path@1.0.1 OK for: @npmcli/arborist@6.2.4 want: ^1.0.1
+447 silly placeDep node_modules/cnpm hosted-git-info@6.1.1 OK for: @npmcli/arborist@6.2.4 want: ^6.1.1
+448 silly placeDep node_modules/cnpm json-parse-even-better-errors@3.0.0 OK for: @npmcli/arborist@6.2.4 want: ^3.0.0
+449 silly placeDep node_modules/cnpm json-stringify-nice@1.1.4 OK for: @npmcli/arborist@6.2.4 want: ^1.1.4
+450 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist minimatch@6.2.0 OK for: @npmcli/arborist@6.2.4 want: ^6.1.6
+451 silly placeDep node_modules/cnpm nopt@7.0.0 OK for: @npmcli/arborist@6.2.4 want: ^7.0.0
+452 silly placeDep node_modules/cnpm npm-install-checks@6.0.0 OK for: @npmcli/arborist@6.2.4 want: ^6.0.0
+453 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist npm-package-arg@10.1.0 OK for: @npmcli/arborist@6.2.4 want: ^10.1.0
+454 silly placeDep node_modules/cnpm npm-pick-manifest@8.0.1 OK for: @npmcli/arborist@6.2.4 want: ^8.0.1
+455 silly placeDep node_modules/cnpm npm-registry-fetch@14.0.3 OK for: @npmcli/arborist@6.2.4 want: ^14.0.3
+456 silly placeDep node_modules/cnpm npmlog@7.0.1 OK for: @npmcli/arborist@6.2.4 want: ^7.0.1
+457 silly placeDep node_modules/cnpm parse-conflict-json@3.0.0 OK for: @npmcli/arborist@6.2.4 want: ^3.0.0
+458 silly placeDep node_modules/cnpm proc-log@3.0.0 OK for: @npmcli/arborist@6.2.4 want: ^3.0.0
+459 silly placeDep node_modules/cnpm promise-all-reject-late@1.0.1 OK for: @npmcli/arborist@6.2.4 want: ^1.0.0
+460 silly placeDep node_modules/cnpm promise-call-limit@1.0.1 OK for: @npmcli/arborist@6.2.4 want: ^1.0.1
+461 silly placeDep node_modules/cnpm read-package-json-fast@3.0.2 OK for: @npmcli/arborist@6.2.4 want: ^3.0.2
+462 silly placeDep node_modules/cnpm ssri@10.0.1 OK for: @npmcli/arborist@6.2.4 want: ^10.0.1
+463 silly placeDep node_modules/cnpm treeverse@3.0.0 OK for: @npmcli/arborist@6.2.4 want: ^3.0.0
+464 silly placeDep node_modules/cnpm walk-up-path@1.0.0 OK for: @npmcli/arborist@6.2.4 want: ^1.0.0
+465 silly fetch manifest npm-bundled@^3.0.0
+466 silly fetch manifest glob@^8.0.1
+467 silly fetch manifest postcss-selector-parser@^6.0.10
+468 silly fetch manifest @npmcli/promise-spawn@^6.0.0
+469 silly fetch manifest which@^3.0.0
+470 silly fetch manifest cmd-shim@^6.0.0
+471 silly fetch manifest read-cmd-shim@^4.0.0
+472 silly fetch manifest write-file-atomic@^5.0.0
+473 silly fetch manifest lru-cache@^7.7.1
+474 silly fetch manifest minipass-collect@^1.0.2
+475 silly fetch manifest minipass-flush@^1.0.5
+476 silly fetch manifest minipass-pipeline@^1.2.4
+477 silly fetch manifest p-map@^4.0.0
+478 silly fetch manifest promise-inflight@^1.0.1
+479 silly fetch manifest unique-filename@^3.0.0
+480 silly fetch manifest lru-cache@^7.5.1
+481 silly fetch manifest brace-expansion@^2.0.1
+482 silly fetch manifest abbrev@^2.0.0
+483 silly fetch manifest validate-npm-package-name@^5.0.0
+484 silly fetch manifest make-fetch-happen@^11.0.0
+485 silly fetch manifest minipass-fetch@^3.0.0
+486 silly fetch manifest minipass-json-stream@^1.0.1
+487 silly fetch manifest minizlib@^2.1.2
+488 silly fetch manifest are-we-there-yet@^4.0.0
+489 silly fetch manifest console-control-strings@^1.1.0
+490 silly fetch manifest gauge@^5.0.0
+491 silly fetch manifest set-blocking@^2.0.0
+492 silly fetch manifest just-diff@^5.0.1
+493 silly fetch manifest just-diff-apply@^5.2.0
+494 http fetch GET 200 https://registry.npmmirror.com/postcss-selector-parser 98ms (cache hit)
+495 http fetch GET 200 https://registry.npmmirror.com/minipass-collect 98ms (cache hit)
+496 http fetch GET 200 https://registry.npmmirror.com/npm-bundled 101ms (cache hit)
+497 http fetch GET 200 https://registry.npmmirror.com/minipass-pipeline 98ms (cache hit)
+498 http fetch GET 200 https://registry.npmmirror.com/promise-inflight 99ms (cache hit)
+499 http fetch GET 200 https://registry.npmmirror.com/are-we-there-yet 94ms (cache hit)
+500 http fetch GET 200 https://registry.npmmirror.com/minipass-flush 101ms (cache hit)
+501 http fetch GET 200 https://registry.npmmirror.com/minipass-json-stream 98ms (cache hit)
+502 http fetch GET 200 https://registry.npmmirror.com/abbrev 99ms (cache hit)
+503 http fetch GET 200 https://registry.npmmirror.com/console-control-strings 95ms (cache hit)
+504 http fetch GET 200 https://registry.npmmirror.com/gauge 95ms (cache hit)
+505 http fetch GET 200 https://registry.npmmirror.com/unique-filename 101ms (cache hit)
+506 http fetch GET 200 https://registry.npmmirror.com/just-diff 97ms (cache hit)
+507 http fetch GET 200 https://registry.npmmirror.com/minipass-fetch 102ms (cache hit)
+508 http fetch GET 200 https://registry.npmmirror.com/just-diff-apply 98ms (cache hit)
+509 http fetch GET 200 https://registry.npmmirror.com/set-blocking 105ms (cache hit)
+510 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist Completed in 145ms
+511 timing idealTree:node_modules/cnpm/node_modules/@isaacs/string-locale-compare Completed in 0ms
+512 timing idealTree:node_modules/cnpm/node_modules/@npmcli/fs Completed in 0ms
+513 silly placeDep node_modules/cnpm npm-bundled@3.0.0 OK for: @npmcli/installed-package-contents@2.0.2 want: ^3.0.0
+514 timing idealTree:node_modules/cnpm/node_modules/@npmcli/installed-package-contents Completed in 0ms
+515 silly placeDep node_modules/cnpm glob@8.1.0 OK for: @npmcli/map-workspaces@3.0.2 want: ^8.0.1
+516 silly placeDep node_modules/cnpm/node_modules/@npmcli/map-workspaces minimatch@6.2.0 OK for: @npmcli/map-workspaces@3.0.2 want: ^6.1.6
+517 silly fetch manifest fs.realpath@^1.0.0
+518 silly fetch manifest inflight@^1.0.4
+519 silly fetch manifest inherits@2
+520 silly fetch manifest minimatch@^5.0.1
+521 silly fetch manifest once@^1.3.0
+522 http fetch GET 200 https://registry.npmmirror.com/fs.realpath 57ms (cache hit)
+523 http fetch GET 200 https://registry.npmmirror.com/inherits 56ms (cache hit)
+524 http fetch GET 200 https://registry.npmmirror.com/inflight 58ms (cache hit)
+525 http fetch GET 200 https://registry.npmmirror.com/once 57ms (cache hit)
+526 timing idealTree:node_modules/cnpm/node_modules/@npmcli/map-workspaces Completed in 60ms
+527 timing idealTree:node_modules/cnpm/node_modules/@npmcli/metavuln-calculator Completed in 0ms
+528 timing idealTree:node_modules/cnpm/node_modules/@npmcli/name-from-folder Completed in 0ms
+529 timing idealTree:node_modules/cnpm/node_modules/@npmcli/node-gyp Completed in 0ms
+530 timing idealTree:node_modules/cnpm/node_modules/@npmcli/package-json Completed in 0ms
+531 silly placeDep node_modules/cnpm postcss-selector-parser@6.0.11 OK for: @npmcli/query@3.0.0 want: ^6.0.10
+532 silly fetch manifest cssesc@^3.0.0
+533 silly fetch manifest util-deprecate@^1.0.2
+534 http fetch GET 200 https://registry.npmmirror.com/util-deprecate 49ms (cache hit)
+535 http fetch GET 200 https://registry.npmmirror.com/cssesc 49ms (cache hit)
+536 timing idealTree:node_modules/cnpm/node_modules/@npmcli/query Completed in 51ms
+537 silly placeDep node_modules/cnpm @npmcli/promise-spawn@6.0.2 OK for: @npmcli/run-script@6.0.0 want: ^6.0.0
+538 silly placeDep node_modules/cnpm which@3.0.0 OK for: @npmcli/run-script@6.0.0 want: ^3.0.0
+539 silly fetch manifest isexe@^2.0.0
+540 http fetch GET 200 https://registry.npmmirror.com/isexe 59ms (cache hit)
+541 timing idealTree:node_modules/cnpm/node_modules/@npmcli/run-script Completed in 61ms
+542 timing idealTree:node_modules/cnpm/node_modules/@npmcli/promise-spawn Completed in 0ms
+543 silly placeDep node_modules/cnpm cmd-extension@1.0.2 OK for: @zkochan/cmd-shim@5.4.1 want: ^1.0.2
+544 silly placeDep node_modules/cnpm graceful-fs@4.2.10 OK for: @zkochan/cmd-shim@5.4.1 want: ^4.2.10
+545 silly placeDep node_modules/cnpm is-windows@1.0.2 OK for: @zkochan/cmd-shim@5.4.1 want: ^1.0.2
+546 timing idealTree:node_modules/cnpm/node_modules/@zkochan/cmd-shim Completed in 2ms
+547 timing idealTree:node_modules/cnpm/node_modules/await-event Completed in 0ms
+548 silly placeDep node_modules/cnpm cmd-shim@4.1.0 OK for: bin-links@2.3.0 want: ^4.0.1
+549 silly placeDep node_modules/cnpm mkdirp-infer-owner@2.0.0 OK for: bin-links@2.3.0 want: ^2.0.0
+550 silly placeDep node_modules/cnpm/node_modules/bin-links npm-normalize-package-bin@1.0.1 OK for: bin-links@2.3.0 want: ^1.0.0
+551 silly placeDep node_modules/cnpm read-cmd-shim@2.0.0 OK for: bin-links@2.3.0 want: ^2.0.0
+552 silly placeDep node_modules/cnpm rimraf@3.0.2 OK for: bin-links@2.3.0 want: ^3.0.0
+553 silly placeDep node_modules/cnpm write-file-atomic@3.0.3 OK for: bin-links@2.3.0 want: ^3.0.3
+554 silly fetch manifest infer-owner@^1.0.4
+555 silly fetch manifest glob@^7.1.3
+556 silly fetch manifest imurmurhash@^0.1.4
+557 silly fetch manifest is-typedarray@^1.0.0
+558 silly fetch manifest signal-exit@^3.0.2
+559 silly fetch manifest typedarray-to-buffer@^3.1.5
+560 http fetch GET 200 https://registry.npmmirror.com/infer-owner 62ms (cache hit)
+561 http fetch GET 200 https://registry.npmmirror.com/imurmurhash 61ms (cache hit)
+562 http fetch GET 200 https://registry.npmmirror.com/typedarray-to-buffer 61ms (cache hit)
+563 http fetch GET 200 https://registry.npmmirror.com/is-typedarray 63ms (cache hit)
+564 timing idealTree:node_modules/cnpm/node_modules/bin-links Completed in 68ms
+565 timing idealTree:node_modules/cnpm/node_modules/binary-mirror-config Completed in 0ms
+566 timing idealTree:node_modules/cnpm/node_modules/bytes Completed in 0ms
+567 silly placeDep node_modules/cnpm fs-minipass@3.0.1 OK for: cacache@17.0.4 want: ^3.0.0
+568 silly placeDep node_modules/cnpm/node_modules/cacache lru-cache@7.18.3 OK for: cacache@17.0.4 want: ^7.7.1
+569 silly placeDep node_modules/cnpm minipass@4.2.4 OK for: cacache@17.0.4 want: ^4.0.0
+570 silly placeDep node_modules/cnpm minipass-collect@1.0.2 OK for: cacache@17.0.4 want: ^1.0.2
+571 silly placeDep node_modules/cnpm minipass-flush@1.0.5 OK for: cacache@17.0.4 want: ^1.0.5
+572 silly placeDep node_modules/cnpm minipass-pipeline@1.2.4 OK for: cacache@17.0.4 want: ^1.2.4
+573 silly placeDep node_modules/cnpm/node_modules/cacache p-map@4.0.0 OK for: cacache@17.0.4 want: ^4.0.0
+574 silly placeDep node_modules/cnpm promise-inflight@1.0.1 OK for: cacache@17.0.4 want: ^1.0.1
+575 silly placeDep node_modules/cnpm unique-filename@3.0.0 OK for: cacache@17.0.4 want: ^3.0.0
+576 silly fetch manifest minipass@^3.0.0
+577 silly fetch manifest aggregate-error@^3.0.0
+578 silly fetch manifest unique-slug@^4.0.0
+579 http fetch GET 200 https://registry.npmmirror.com/unique-slug 52ms (cache hit)
+580 http fetch GET 200 https://registry.npmmirror.com/aggregate-error 54ms (cache hit)
+581 timing idealTree:node_modules/cnpm/node_modules/cacache Completed in 64ms
+582 timing idealTree:node_modules/cnpm/node_modules/cacheable-lookup Completed in 0ms
+583 silly placeDep node_modules/cnpm ansi-styles@3.2.1 OK for: chalk@2.4.2 want: ^3.2.1
+584 silly placeDep node_modules/cnpm escape-string-regexp@1.0.5 OK for: chalk@2.4.2 want: ^1.0.5
+585 silly placeDep node_modules/cnpm supports-color@5.5.0 OK for: chalk@2.4.2 want: ^5.3.0
+586 silly fetch manifest color-convert@^1.9.0
+587 silly fetch manifest has-flag@^3.0.0
+588 http fetch GET 200 https://registry.npmmirror.com/has-flag 59ms (cache hit)
+589 http fetch GET 200 https://registry.npmmirror.com/color-convert 60ms (cache hit)
+590 timing idealTree:node_modules/cnpm/node_modules/chalk Completed in 62ms
+591 silly placeDep node_modules/cnpm color-convert@1.9.3 OK for: ansi-styles@3.2.1 want: ^1.9.0
+592 silly fetch manifest color-name@1.1.3
+593 http fetch GET 200 https://registry.npmmirror.com/color-name 64ms (cache hit)
+594 timing idealTree:node_modules/cnpm/node_modules/ansi-styles Completed in 65ms
+595 timing idealTree:node_modules/cnpm/node_modules/cmd-extension Completed in 0ms
+596 timing idealTree:node_modules/cnpm/node_modules/cmd-shim Completed in 0ms
+597 silly placeDep node_modules/cnpm color-name@1.1.3 OK for: color-convert@1.9.3 want: 1.1.3
+598 timing idealTree:node_modules/cnpm/node_modules/color-convert Completed in 1ms
+599 timing idealTree:node_modules/cnpm/node_modules/color-name Completed in 0ms
+600 timing idealTree:node_modules/cnpm/node_modules/common-ancestor-path Completed in 0ms
+601 timing idealTree:node_modules/cnpm/node_modules/destroy Completed in 0ms
+602 timing idealTree:node_modules/cnpm/node_modules/detect-libc Completed in 0ms
+603 timing idealTree:node_modules/cnpm/node_modules/escape-string-regexp Completed in 0ms
+604 silly placeDep node_modules/cnpm/node_modules/execa cross-spawn@7.0.3 OK for: execa@5.1.1 want: ^7.0.3
+605 silly placeDep node_modules/cnpm get-stream@6.0.1 OK for: execa@5.1.1 want: ^6.0.0
+606 silly placeDep node_modules/cnpm human-signals@2.1.0 OK for: execa@5.1.1 want: ^2.1.0
+607 silly placeDep node_modules/cnpm is-stream@2.0.1 OK for: execa@5.1.1 want: ^2.0.0
+608 silly placeDep node_modules/cnpm merge-stream@2.0.0 OK for: execa@5.1.1 want: ^2.0.0
+609 silly placeDep node_modules/cnpm npm-run-path@4.0.1 OK for: execa@5.1.1 want: ^4.0.1
+610 silly placeDep node_modules/cnpm onetime@5.1.2 OK for: execa@5.1.1 want: ^5.1.2
+611 silly placeDep node_modules/cnpm signal-exit@3.0.7 OK for: execa@5.1.1 want: ^3.0.3
+612 silly placeDep node_modules/cnpm strip-final-newline@2.0.0 OK for: execa@5.1.1 want: ^2.0.0
+613 silly fetch manifest path-key@^3.1.0
+614 silly fetch manifest shebang-command@^2.0.0
+615 silly fetch manifest which@^2.0.1
+616 silly fetch manifest path-key@^3.0.0
+617 silly fetch manifest mimic-fn@^2.1.0
+618 http fetch GET 200 https://registry.npmmirror.com/mimic-fn 58ms (cache hit)
+619 http fetch GET 200 https://registry.npmmirror.com/path-key 60ms (cache hit)
+620 http fetch GET 200 https://registry.npmmirror.com/path-key 59ms (cache hit)
+621 http fetch GET 200 https://registry.npmmirror.com/shebang-command 60ms (cache hit)
+622 timing idealTree:node_modules/cnpm/node_modules/execa Completed in 64ms
+623 silly placeDep node_modules/cnpm jsonfile@4.0.0 OK for: fs-extra@7.0.1 want: ^4.0.0
+624 silly placeDep node_modules/cnpm universalify@0.1.2 OK for: fs-extra@7.0.1 want: ^0.1.0
+625 timing idealTree:node_modules/cnpm/node_modules/fs-extra Completed in 1ms
+626 timing idealTree:node_modules/cnpm/node_modules/fs-minipass Completed in 0ms
+627 timing idealTree:node_modules/cnpm/node_modules/get-stream Completed in 0ms
+628 silly placeDep node_modules/cnpm fs.realpath@1.0.0 OK for: glob@8.1.0 want: ^1.0.0
+629 silly placeDep node_modules/cnpm inflight@1.0.6 OK for: glob@8.1.0 want: ^1.0.4
+630 silly placeDep node_modules/cnpm inherits@2.0.4 OK for: glob@8.1.0 want: 2
+631 silly placeDep node_modules/cnpm/node_modules/glob minimatch@5.1.6 OK for: glob@8.1.0 want: ^5.0.1
+632 silly placeDep node_modules/cnpm once@1.4.0 OK for: glob@8.1.0 want: ^1.3.0
+633 silly fetch manifest wrappy@1
+634 http fetch GET 200 https://registry.npmmirror.com/wrappy 55ms (cache hit)
+635 timing idealTree:node_modules/cnpm/node_modules/glob Completed in 58ms
+636 timing idealTree:node_modules/cnpm/node_modules/fs.realpath Completed in 0ms
+637 silly placeDep node_modules/cnpm array-union@2.1.0 OK for: globby@11.1.0 want: ^2.1.0
+638 silly placeDep node_modules/cnpm dir-glob@3.0.1 OK for: globby@11.1.0 want: ^3.0.1
+639 silly placeDep node_modules/cnpm fast-glob@3.2.12 OK for: globby@11.1.0 want: ^3.2.9
+640 silly placeDep node_modules/cnpm ignore@5.2.4 OK for: globby@11.1.0 want: ^5.2.0
+641 silly placeDep node_modules/cnpm merge2@1.4.1 OK for: globby@11.1.0 want: ^1.4.1
+642 silly placeDep node_modules/cnpm slash@3.0.0 OK for: globby@11.1.0 want: ^3.0.0
+643 silly fetch manifest path-type@^4.0.0
+644 silly fetch manifest @nodelib/fs.stat@^2.0.2
+645 silly fetch manifest @nodelib/fs.walk@^1.2.3
+646 silly fetch manifest glob-parent@^5.1.2
+647 silly fetch manifest micromatch@^4.0.4
+648 http fetch GET 200 https://registry.npmmirror.com/@nodelib%2ffs.stat 59ms (cache hit)
+649 http fetch GET 200 https://registry.npmmirror.com/path-type 62ms (cache hit)
+650 http fetch GET 200 https://registry.npmmirror.com/glob-parent 61ms (cache hit)
+651 http fetch GET 200 https://registry.npmmirror.com/@nodelib%2ffs.walk 61ms (cache hit)
+652 http fetch GET 200 https://registry.npmmirror.com/micromatch 61ms (cache hit)
+653 timing idealTree:node_modules/cnpm/node_modules/globby Completed in 67ms
+654 timing idealTree:node_modules/cnpm/node_modules/array-union Completed in 0ms
+655 silly placeDep node_modules/cnpm path-type@4.0.0 OK for: dir-glob@3.0.1 want: ^4.0.0
+656 timing idealTree:node_modules/cnpm/node_modules/dir-glob Completed in 1ms
+657 silly placeDep node_modules/cnpm @nodelib/fs.stat@2.0.5 OK for: fast-glob@3.2.12 want: ^2.0.2
+658 silly placeDep node_modules/cnpm @nodelib/fs.walk@1.2.8 OK for: fast-glob@3.2.12 want: ^1.2.3
+659 silly placeDep node_modules/cnpm glob-parent@5.1.2 OK for: fast-glob@3.2.12 want: ^5.1.2
+660 silly placeDep node_modules/cnpm micromatch@4.0.5 OK for: fast-glob@3.2.12 want: ^4.0.4
+661 silly fetch manifest @nodelib/fs.scandir@2.1.5
+662 silly fetch manifest fastq@^1.6.0
+663 silly fetch manifest is-glob@^4.0.1
+664 silly fetch manifest braces@^3.0.2
+665 silly fetch manifest picomatch@^2.3.1
+666 http fetch GET 200 https://registry.npmmirror.com/braces 55ms (cache hit)
+667 http fetch GET 200 https://registry.npmmirror.com/@nodelib%2ffs.scandir 58ms (cache hit)
+668 http fetch GET 200 https://registry.npmmirror.com/is-glob 58ms (cache hit)
+669 http fetch GET 200 https://registry.npmmirror.com/picomatch 60ms (cache hit)
+670 http fetch GET 200 https://registry.npmmirror.com/fastq 61ms (cache hit)
+671 timing idealTree:node_modules/cnpm/node_modules/fast-glob Completed in 65ms
+672 timing idealTree:node_modules/cnpm/node_modules/@nodelib/fs.stat Completed in 0ms
+673 silly placeDep node_modules/cnpm @nodelib/fs.scandir@2.1.5 OK for: @nodelib/fs.walk@1.2.8 want: 2.1.5
+674 silly placeDep node_modules/cnpm fastq@1.15.0 OK for: @nodelib/fs.walk@1.2.8 want: ^1.6.0
+675 silly fetch manifest run-parallel@^1.1.9
+676 silly fetch manifest reusify@^1.0.4
+677 http fetch GET 200 https://registry.npmmirror.com/run-parallel 53ms (cache hit)
+678 http fetch GET 200 https://registry.npmmirror.com/reusify 53ms (cache hit)
+679 timing idealTree:node_modules/cnpm/node_modules/@nodelib/fs.walk Completed in 55ms
+680 silly placeDep node_modules/cnpm run-parallel@1.2.0 OK for: @nodelib/fs.scandir@2.1.5 want: ^1.1.9
+681 silly fetch manifest queue-microtask@^1.2.2
+682 http fetch GET 200 https://registry.npmmirror.com/queue-microtask 51ms (cache hit)
+683 timing idealTree:node_modules/cnpm/node_modules/@nodelib/fs.scandir Completed in 52ms
+684 silly placeDep node_modules/cnpm reusify@1.0.4 OK for: fastq@1.15.0 want: ^1.0.4
+685 timing idealTree:node_modules/cnpm/node_modules/fastq Completed in 1ms
+686 silly placeDep node_modules/cnpm is-glob@4.0.3 OK for: glob-parent@5.1.2 want: ^4.0.1
+687 silly fetch manifest is-extglob@^2.1.1
+688 http fetch GET 200 https://registry.npmmirror.com/is-extglob 64ms (cache hit)
+689 timing idealTree:node_modules/cnpm/node_modules/glob-parent Completed in 65ms
+690 timing idealTree:node_modules/cnpm/node_modules/graceful-fs Completed in 0ms
+691 silly placeDep node_modules/cnpm/node_modules/hosted-git-info lru-cache@7.18.3 OK for: hosted-git-info@6.1.1 want: ^7.5.1
+692 timing idealTree:node_modules/cnpm/node_modules/hosted-git-info Completed in 0ms
+693 timing idealTree:node_modules/cnpm/node_modules/human-signals Completed in 0ms
+694 timing idealTree:node_modules/cnpm/node_modules/ignore Completed in 0ms
+695 silly placeDep node_modules/cnpm wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+696 timing idealTree:node_modules/cnpm/node_modules/inflight Completed in 0ms
+697 timing idealTree:node_modules/cnpm/node_modules/inherits Completed in 0ms
+698 silly placeDep node_modules/cnpm is-extglob@2.1.1 OK for: is-glob@4.0.3 want: ^2.1.1
+699 timing idealTree:node_modules/cnpm/node_modules/is-glob Completed in 1ms
+700 timing idealTree:node_modules/cnpm/node_modules/is-extglob Completed in 0ms
+701 timing idealTree:node_modules/cnpm/node_modules/is-stream Completed in 0ms
+702 timing idealTree:node_modules/cnpm/node_modules/is-windows Completed in 0ms
+703 timing idealTree:node_modules/cnpm/node_modules/json-parse-even-better-errors Completed in 0ms
+704 timing idealTree:node_modules/cnpm/node_modules/json-stringify-nice Completed in 0ms
+705 timing idealTree:node_modules/cnpm/node_modules/jsonfile Completed in 0ms
+706 timing idealTree:node_modules/cnpm/node_modules/merge-stream Completed in 0ms
+707 timing idealTree:node_modules/cnpm/node_modules/merge2 Completed in 0ms
+708 silly placeDep node_modules/cnpm braces@3.0.2 OK for: micromatch@4.0.5 want: ^3.0.2
+709 silly placeDep node_modules/cnpm picomatch@2.3.1 OK for: micromatch@4.0.5 want: ^2.3.1
+710 silly fetch manifest fill-range@^7.0.1
+711 http fetch GET 200 https://registry.npmmirror.com/fill-range 49ms (cache hit)
+712 timing idealTree:node_modules/cnpm/node_modules/micromatch Completed in 50ms
+713 silly placeDep node_modules/cnpm fill-range@7.0.1 OK for: braces@3.0.2 want: ^7.0.1
+714 silly fetch manifest to-regex-range@^5.0.1
+715 http fetch GET 200 https://registry.npmmirror.com/to-regex-range 68ms (cache hit)
+716 timing idealTree:node_modules/cnpm/node_modules/braces Completed in 69ms
+717 silly placeDep node_modules/cnpm to-regex-range@5.0.1 OK for: fill-range@7.0.1 want: ^5.0.1
+718 silly fetch manifest is-number@^7.0.0
+719 http fetch GET 200 https://registry.npmmirror.com/is-number 55ms (cache hit)
+720 timing idealTree:node_modules/cnpm/node_modules/fill-range Completed in 56ms
+721 silly placeDep node_modules/cnpm brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+722 silly fetch manifest balanced-match@^1.0.0
+723 silly fetch manifest concat-map@0.0.1
+724 http fetch GET 200 https://registry.npmmirror.com/balanced-match 51ms (cache hit)
+725 http fetch GET 200 https://registry.npmmirror.com/concat-map 51ms (cache hit)
+726 timing idealTree:node_modules/cnpm/node_modules/minimatch Completed in 53ms
+727 silly placeDep node_modules/cnpm balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+728 silly placeDep node_modules/cnpm concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+729 timing idealTree:node_modules/cnpm/node_modules/brace-expansion Completed in 1ms
+730 timing idealTree:node_modules/cnpm/node_modules/balanced-match Completed in 0ms
+731 timing idealTree:node_modules/cnpm/node_modules/concat-map Completed in 0ms
+732 timing idealTree:node_modules/cnpm/node_modules/minimist Completed in 0ms
+733 timing idealTree:node_modules/cnpm/node_modules/minipass Completed in 0ms
+734 silly placeDep node_modules/cnpm/node_modules/minipass-collect minipass@3.3.6 OK for: minipass-collect@1.0.2 want: ^3.0.0
+735 timing idealTree:node_modules/cnpm/node_modules/minipass-collect Completed in 0ms
+736 silly placeDep node_modules/cnpm/node_modules/minipass-flush minipass@3.3.6 OK for: minipass-flush@1.0.5 want: ^3.0.0
+737 timing idealTree:node_modules/cnpm/node_modules/minipass-flush Completed in 1ms
+738 silly placeDep node_modules/cnpm/node_modules/minipass-pipeline minipass@3.3.6 OK for: minipass-pipeline@1.2.4 want: ^3.0.0
+739 timing idealTree:node_modules/cnpm/node_modules/minipass-pipeline Completed in 0ms
+740 silly placeDep node_modules/cnpm chownr@2.0.0 OK for: mkdirp-infer-owner@2.0.0 want: ^2.0.0
+741 silly placeDep node_modules/cnpm infer-owner@1.0.4 OK for: mkdirp-infer-owner@2.0.0 want: ^1.0.4
+742 silly placeDep node_modules/cnpm mkdirp@1.0.4 OK for: mkdirp-infer-owner@2.0.0 want: ^1.0.3
+743 timing idealTree:node_modules/cnpm/node_modules/mkdirp-infer-owner Completed in 2ms
+744 timing idealTree:node_modules/cnpm/node_modules/chownr Completed in 0ms
+745 timing idealTree:node_modules/cnpm/node_modules/infer-owner Completed in 0ms
+746 timing idealTree:node_modules/cnpm/node_modules/mkdirp Completed in 0ms
+747 timing idealTree:node_modules/cnpm/node_modules/moment Completed in 0ms
+748 silly placeDep node_modules/cnpm env-paths@2.2.1 OK for: node-gyp@9.3.1 want: ^2.2.0
+749 silly placeDep node_modules/cnpm/node_modules/node-gyp glob@7.2.3 OK for: node-gyp@9.3.1 want: ^7.1.4
+750 silly placeDep node_modules/cnpm make-fetch-happen@10.2.1 OK for: node-gyp@9.3.1 want: ^10.0.3
+751 silly placeDep node_modules/cnpm/node_modules/node-gyp nopt@6.0.0 OK for: node-gyp@9.3.1 want: ^6.0.0
+752 silly placeDep node_modules/cnpm/node_modules/node-gyp npmlog@6.0.2 OK for: node-gyp@9.3.1 want: ^6.0.0
+753 silly placeDep node_modules/cnpm/node_modules/node-gyp which@2.0.2 OK for: node-gyp@9.3.1 want: ^2.0.2
+754 silly fetch manifest path-is-absolute@^1.0.0
+755 silly fetch manifest agentkeepalive@^4.2.1
+756 silly fetch manifest cacache@^16.1.0
+757 silly fetch manifest http-cache-semantics@^4.1.0
+758 silly fetch manifest http-proxy-agent@^5.0.0
+759 silly fetch manifest https-proxy-agent@^5.0.0
+760 silly fetch manifest is-lambda@^1.0.1
+761 silly fetch manifest minipass@^3.1.6
+762 silly fetch manifest minipass-fetch@^2.0.3
+763 silly fetch manifest negotiator@^0.6.3
+764 silly fetch manifest socks-proxy-agent@^7.0.0
+765 silly fetch manifest ssri@^9.0.0
+766 silly fetch manifest abbrev@^1.0.0
+767 silly fetch manifest are-we-there-yet@^3.0.0
+768 silly fetch manifest gauge@^4.0.3
+769 http fetch GET 200 https://registry.npmmirror.com/https-proxy-agent 66ms (cache hit)
+770 http fetch GET 200 https://registry.npmmirror.com/http-cache-semantics 69ms (cache hit)
+771 http fetch GET 200 https://registry.npmmirror.com/socks-proxy-agent 72ms (cache hit)
+772 http fetch GET 200 https://registry.npmmirror.com/path-is-absolute 78ms (cache hit)
+773 http fetch GET 200 https://registry.npmmirror.com/negotiator 75ms (cache hit)
+774 http fetch GET 200 https://registry.npmmirror.com/agentkeepalive 77ms (cache hit)
+775 http fetch GET 200 https://registry.npmmirror.com/http-proxy-agent 77ms (cache hit)
+776 http fetch GET 200 https://registry.npmmirror.com/is-lambda 96ms (cache hit)
+777 timing idealTree:node_modules/cnpm/node_modules/node-gyp Completed in 104ms
+778 timing idealTree:node_modules/cnpm/node_modules/env-paths Completed in 0ms
+779 silly placeDep node_modules/cnpm agentkeepalive@4.3.0 OK for: make-fetch-happen@10.2.1 want: ^4.2.1
+780 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen cacache@16.1.3 OK for: make-fetch-happen@10.2.1 want: ^16.1.0
+781 silly placeDep node_modules/cnpm http-cache-semantics@4.1.1 OK for: make-fetch-happen@10.2.1 want: ^4.1.0
+782 silly placeDep node_modules/cnpm http-proxy-agent@5.0.0 OK for: make-fetch-happen@10.2.1 want: ^5.0.0
+783 silly placeDep node_modules/cnpm https-proxy-agent@5.0.1 OK for: make-fetch-happen@10.2.1 want: ^5.0.0
+784 silly placeDep node_modules/cnpm is-lambda@1.0.1 OK for: make-fetch-happen@10.2.1 want: ^1.0.1
+785 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen lru-cache@7.18.3 OK for: make-fetch-happen@10.2.1 want: ^7.7.1
+786 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen minipass@3.3.6 OK for: make-fetch-happen@10.2.1 want: ^3.1.6
+787 silly placeDep node_modules/cnpm minipass-fetch@2.1.2 OK for: make-fetch-happen@10.2.1 want: ^2.0.3
+788 silly placeDep node_modules/cnpm negotiator@0.6.3 OK for: make-fetch-happen@10.2.1 want: ^0.6.3
+789 silly placeDep node_modules/cnpm promise-retry@2.0.1 OK for: make-fetch-happen@10.2.1 want: ^2.0.1
+790 silly placeDep node_modules/cnpm socks-proxy-agent@7.0.0 OK for: make-fetch-happen@10.2.1 want: ^7.0.0
+791 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen ssri@9.0.1 OK for: make-fetch-happen@10.2.1 want: ^9.0.0
+792 silly fetch manifest depd@^2.0.0
+793 silly fetch manifest humanize-ms@^1.2.1
+794 silly fetch manifest @npmcli/fs@^2.1.0
+795 silly fetch manifest @npmcli/move-file@^2.0.0
+796 silly fetch manifest fs-minipass@^2.1.0
+797 silly fetch manifest unique-filename@^2.0.0
+798 silly fetch manifest @tootallnate/once@2
+799 silly fetch manifest agent-base@6
+800 silly fetch manifest minipass-sized@^1.0.3
+801 silly fetch manifest encoding@^0.1.13
+802 silly fetch manifest err-code@^2.0.2
+803 silly fetch manifest retry@^0.12.0
+804 silly fetch manifest agent-base@^6.0.2
+805 silly fetch manifest socks@^2.6.2
+806 http fetch GET 200 https://registry.npmmirror.com/@npmcli%2fmove-file 72ms (cache hit)
+807 http fetch GET 200 https://registry.npmmirror.com/@tootallnate%2fonce 73ms (cache hit)
+808 http fetch GET 200 https://registry.npmmirror.com/err-code 72ms (cache hit)
+809 http fetch GET 200 https://registry.npmmirror.com/depd 75ms (cache hit)
+810 http fetch GET 200 https://registry.npmmirror.com/socks 70ms (cache hit)
+811 http fetch GET 200 https://registry.npmmirror.com/minipass-sized 74ms (cache hit)
+812 http fetch GET 200 https://registry.npmmirror.com/agent-base 74ms (cache hit)
+813 http fetch GET 200 https://registry.npmmirror.com/agent-base 72ms (cache hit)
+814 http fetch GET 200 https://registry.npmmirror.com/retry 74ms (cache hit)
+815 http fetch GET 200 https://registry.npmmirror.com/encoding 76ms (cache hit)
+816 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen Completed in 87ms
+817 silly placeDep node_modules/cnpm depd@2.0.0 OK for: agentkeepalive@4.3.0 want: ^2.0.0
+818 silly placeDep node_modules/cnpm humanize-ms@1.2.1 OK for: agentkeepalive@4.3.0 want: ^1.2.1
+819 timing idealTree:node_modules/cnpm/node_modules/agentkeepalive Completed in 1ms
+820 timing idealTree:node_modules/cnpm/node_modules/depd Completed in 0ms
+821 timing idealTree:node_modules/cnpm/node_modules/http-cache-semantics Completed in 0ms
+822 silly placeDep node_modules/cnpm @tootallnate/once@2.0.0 OK for: http-proxy-agent@5.0.0 want: 2
+823 silly placeDep node_modules/cnpm agent-base@6.0.2 OK for: http-proxy-agent@5.0.0 want: 6
+824 timing idealTree:node_modules/cnpm/node_modules/http-proxy-agent Completed in 6ms
+825 timing idealTree:node_modules/cnpm/node_modules/@tootallnate/once Completed in 0ms
+826 timing idealTree:node_modules/cnpm/node_modules/agent-base Completed in 0ms
+827 timing idealTree:node_modules/cnpm/node_modules/https-proxy-agent Completed in 0ms
+828 timing idealTree:node_modules/cnpm/node_modules/humanize-ms Completed in 0ms
+829 timing idealTree:node_modules/cnpm/node_modules/is-lambda Completed in 0ms
+830 silly placeDep node_modules/cnpm encoding@0.1.13 OK for: minipass-fetch@2.1.2 want: ^0.1.13
+831 silly placeDep node_modules/cnpm/node_modules/minipass-fetch minipass@3.3.6 OK for: minipass-fetch@2.1.2 want: ^3.1.6
+832 silly placeDep node_modules/cnpm minipass-sized@1.0.3 OK for: minipass-fetch@2.1.2 want: ^1.0.3
+833 silly placeDep node_modules/cnpm minizlib@2.1.2 OK for: minipass-fetch@2.1.2 want: ^2.1.2
+834 silly fetch manifest iconv-lite@^0.6.2
+835 timing idealTree:node_modules/cnpm/node_modules/minipass-fetch Completed in 2ms
+836 silly placeDep node_modules/cnpm iconv-lite@0.6.3 OK for: encoding@0.1.13 want: ^0.6.2
+837 silly fetch manifest safer-buffer@>= 2.1.2 < 3.0.0
+838 http fetch GET 200 https://registry.npmmirror.com/safer-buffer 54ms (cache hit)
+839 timing idealTree:node_modules/cnpm/node_modules/encoding Completed in 55ms
+840 silly placeDep node_modules/cnpm safer-buffer@2.1.2 OK for: iconv-lite@0.6.3 want: >= 2.1.2 < 3.0.0
+841 timing idealTree:node_modules/cnpm/node_modules/iconv-lite Completed in 0ms
+842 silly placeDep node_modules/cnpm/node_modules/minipass-sized minipass@3.3.6 OK for: minipass-sized@1.0.3 want: ^3.0.0
+843 timing idealTree:node_modules/cnpm/node_modules/minipass-sized Completed in 1ms
+844 silly placeDep node_modules/cnpm/node_modules/minizlib minipass@3.3.6 OK for: minizlib@2.1.2 want: ^3.0.0
+845 silly placeDep node_modules/cnpm yallist@4.0.0 OK for: minizlib@2.1.2 want: ^4.0.0
+846 timing idealTree:node_modules/cnpm/node_modules/minizlib Completed in 1ms
+847 timing idealTree:node_modules/cnpm/node_modules/negotiator Completed in 0ms
+848 timing idealTree:node_modules/cnpm/node_modules/node-homedir Completed in 0ms
+849 silly placeDep node_modules/cnpm abbrev@2.0.0 OK for: nopt@7.0.0 want: ^2.0.0
+850 timing idealTree:node_modules/cnpm/node_modules/nopt Completed in 1ms
+851 timing idealTree:node_modules/cnpm/node_modules/abbrev Completed in 0ms
+852 silly placeDep node_modules/cnpm is-core-module@2.11.0 OK for: normalize-package-data@5.0.0 want: ^2.8.1
+853 silly placeDep node_modules/cnpm validate-npm-package-license@3.0.4 OK for: normalize-package-data@5.0.0 want: ^3.0.4
+854 silly fetch manifest has@^1.0.3
+855 silly fetch manifest spdx-correct@^3.0.0
+856 silly fetch manifest spdx-expression-parse@^3.0.0
+857 http fetch GET 200 https://registry.npmmirror.com/spdx-expression-parse 51ms (cache hit)
+858 http fetch GET 200 https://registry.npmmirror.com/has 52ms (cache hit)
+859 http fetch GET 200 https://registry.npmmirror.com/spdx-correct 66ms (cache hit)
+860 timing idealTree:node_modules/cnpm/node_modules/normalize-package-data Completed in 68ms
+861 silly placeDep node_modules/cnpm has@1.0.3 OK for: is-core-module@2.11.0 want: ^1.0.3
+862 silly fetch manifest function-bind@^1.1.1
+863 http fetch GET 200 https://registry.npmmirror.com/function-bind 51ms (cache hit)
+864 timing idealTree:node_modules/cnpm/node_modules/is-core-module Completed in 53ms
+865 silly placeDep node_modules/cnpm function-bind@1.1.1 OK for: has@1.0.3 want: ^1.1.1
+866 timing idealTree:node_modules/cnpm/node_modules/has Completed in 2ms
+867 timing idealTree:node_modules/cnpm/node_modules/function-bind Completed in 0ms
+868 timing idealTree:node_modules/cnpm/node_modules/npm-bundled Completed in 0ms
+869 timing idealTree:node_modules/cnpm/node_modules/npm-install-checks Completed in 0ms
+870 timing idealTree:node_modules/cnpm/node_modules/npm-normalize-package-bin Completed in 0ms
+871 silly placeDep node_modules/cnpm/node_modules/npm-package-arg hosted-git-info@4.1.0 OK for: npm-package-arg@8.1.5 want: ^4.0.1
+872 silly placeDep node_modules/cnpm validate-npm-package-name@3.0.0 OK for: npm-package-arg@8.1.5 want: ^3.0.0
+873 silly fetch manifest builtins@^1.0.3
+874 http fetch GET 200 https://registry.npmmirror.com/builtins 53ms (cache hit)
+875 timing idealTree:node_modules/cnpm/node_modules/npm-package-arg Completed in 55ms
+876 silly placeDep node_modules/cnpm/node_modules/npm-pick-manifest npm-package-arg@10.1.0 OK for: npm-pick-manifest@8.0.1 want: ^10.0.0
+877 timing idealTree:node_modules/cnpm/node_modules/npm-pick-manifest Completed in 0ms
+878 silly placeDep node_modules/cnpm/node_modules/npm-registry-fetch make-fetch-happen@11.0.3 OK for: npm-registry-fetch@14.0.3 want: ^11.0.0
+879 silly placeDep node_modules/cnpm/node_modules/npm-registry-fetch minipass-fetch@3.0.1 OK for: npm-registry-fetch@14.0.3 want: ^3.0.0
+880 silly placeDep node_modules/cnpm minipass-json-stream@1.0.1 OK for: npm-registry-fetch@14.0.3 want: ^1.0.1
+881 silly placeDep node_modules/cnpm/node_modules/npm-registry-fetch npm-package-arg@10.1.0 OK for: npm-registry-fetch@14.0.3 want: ^10.0.0
+882 silly fetch manifest jsonparse@^1.3.1
+883 http fetch GET 200 https://registry.npmmirror.com/jsonparse 54ms (cache hit)
+884 timing idealTree:node_modules/cnpm/node_modules/npm-registry-fetch Completed in 58ms
+885 silly placeDep node_modules/cnpm jsonparse@1.3.1 OK for: minipass-json-stream@1.0.1 want: ^1.3.1
+886 silly placeDep node_modules/cnpm/node_modules/minipass-json-stream minipass@3.3.6 OK for: minipass-json-stream@1.0.1 want: ^3.0.0
+887 timing idealTree:node_modules/cnpm/node_modules/minipass-json-stream Completed in 1ms
+888 timing idealTree:node_modules/cnpm/node_modules/jsonparse Completed in 0ms
+889 silly placeDep node_modules/cnpm path-key@3.1.1 OK for: npm-run-path@4.0.1 want: ^3.0.0
+890 timing idealTree:node_modules/cnpm/node_modules/npm-run-path Completed in 1ms
+891 silly placeDep node_modules/cnpm are-we-there-yet@4.0.0 OK for: npmlog@7.0.1 want: ^4.0.0
+892 silly placeDep node_modules/cnpm console-control-strings@1.1.0 OK for: npmlog@7.0.1 want: ^1.1.0
+893 silly placeDep node_modules/cnpm gauge@5.0.0 OK for: npmlog@7.0.1 want: ^5.0.0
+894 silly placeDep node_modules/cnpm set-blocking@2.0.0 OK for: npmlog@7.0.1 want: ^2.0.0
+895 silly fetch manifest delegates@^1.0.0
+896 silly fetch manifest readable-stream@^4.1.0
+897 silly fetch manifest aproba@^1.0.3 || ^2.0.0
+898 silly fetch manifest color-support@^1.1.3
+899 silly fetch manifest has-unicode@^2.0.1
+900 silly fetch manifest string-width@^4.2.3
+901 silly fetch manifest strip-ansi@^6.0.1
+902 silly fetch manifest wide-align@^1.1.5
+903 http fetch GET 200 https://registry.npmmirror.com/string-width 65ms (cache hit)
+904 http fetch GET 200 https://registry.npmmirror.com/aproba 67ms (cache hit)
+905 http fetch GET 200 https://registry.npmmirror.com/readable-stream 68ms (cache hit)
+906 http fetch GET 200 https://registry.npmmirror.com/delegates 69ms (cache hit)
+907 http fetch GET 200 https://registry.npmmirror.com/has-unicode 68ms (cache hit)
+908 http fetch GET 200 https://registry.npmmirror.com/wide-align 67ms (cache hit)
+909 http fetch GET 200 https://registry.npmmirror.com/color-support 71ms (cache hit)
+910 timing idealTree:node_modules/cnpm/node_modules/npmlog Completed in 74ms
+911 silly placeDep node_modules/cnpm delegates@1.0.0 OK for: are-we-there-yet@4.0.0 want: ^1.0.0
+912 silly placeDep node_modules/cnpm readable-stream@4.3.0 OK for: are-we-there-yet@4.0.0 want: ^4.1.0
+913 silly fetch manifest abort-controller@^3.0.0
+914 silly fetch manifest buffer@^6.0.3
+915 silly fetch manifest events@^3.3.0
+916 silly fetch manifest process@^0.11.10
+917 http fetch GET 200 https://registry.npmmirror.com/abort-controller 56ms (cache hit)
+918 http fetch GET 200 https://registry.npmmirror.com/events 56ms (cache hit)
+919 http fetch GET 200 https://registry.npmmirror.com/buffer 60ms (cache hit)
+920 http fetch GET 200 https://registry.npmmirror.com/process 61ms (cache hit)
+921 timing idealTree:node_modules/cnpm/node_modules/are-we-there-yet Completed in 66ms
+922 timing idealTree:node_modules/cnpm/node_modules/console-control-strings Completed in 0ms
+923 timing idealTree:node_modules/cnpm/node_modules/delegates Completed in 0ms
+924 silly placeDep node_modules/cnpm aproba@2.0.0 OK for: gauge@5.0.0 want: ^1.0.3 || ^2.0.0
+925 silly placeDep node_modules/cnpm color-support@1.1.3 OK for: gauge@5.0.0 want: ^1.1.3
+926 silly placeDep node_modules/cnpm has-unicode@2.0.1 OK for: gauge@5.0.0 want: ^2.0.1
+927 silly placeDep node_modules/cnpm string-width@4.2.3 OK for: gauge@5.0.0 want: ^4.2.3
+928 silly placeDep node_modules/cnpm strip-ansi@6.0.1 OK for: gauge@5.0.0 want: ^6.0.1
+929 silly placeDep node_modules/cnpm wide-align@1.1.5 OK for: gauge@5.0.0 want: ^1.1.5
+930 silly fetch manifest emoji-regex@^8.0.0
+931 silly fetch manifest is-fullwidth-code-point@^3.0.0
+932 silly fetch manifest ansi-regex@^5.0.1
+933 http fetch GET 200 https://registry.npmmirror.com/emoji-regex 56ms (cache hit)
+934 http fetch GET 200 https://registry.npmmirror.com/is-fullwidth-code-point 56ms (cache hit)
+935 http fetch GET 200 https://registry.npmmirror.com/ansi-regex 56ms (cache hit)
+936 timing idealTree:node_modules/cnpm/node_modules/gauge Completed in 60ms
+937 timing idealTree:node_modules/cnpm/node_modules/aproba Completed in 0ms
+938 timing idealTree:node_modules/cnpm/node_modules/color-support Completed in 1ms
+939 timing idealTree:node_modules/cnpm/node_modules/has-unicode Completed in 0ms
+940 timing idealTree:node_modules/cnpm/node_modules/once Completed in 0ms
+941 silly placeDep node_modules/cnpm mimic-fn@2.1.0 OK for: onetime@5.1.2 want: ^2.1.0
+942 timing idealTree:node_modules/cnpm/node_modules/onetime Completed in 0ms
+943 timing idealTree:node_modules/cnpm/node_modules/mimic-fn Completed in 0ms
+944 silly placeDep node_modules/cnpm define-lazy-prop@2.0.0 OK for: open@8.4.2 want: ^2.0.0
+945 silly placeDep node_modules/cnpm is-docker@2.2.1 OK for: open@8.4.2 want: ^2.1.1
+946 silly placeDep node_modules/cnpm is-wsl@2.2.0 OK for: open@8.4.2 want: ^2.2.0
+947 timing idealTree:node_modules/cnpm/node_modules/open Completed in 2ms
+948 timing idealTree:node_modules/cnpm/node_modules/define-lazy-prop Completed in 0ms
+949 timing idealTree:node_modules/cnpm/node_modules/is-docker Completed in 0ms
+950 timing idealTree:node_modules/cnpm/node_modules/is-wsl Completed in 0ms
+951 silly placeDep node_modules/cnpm/node_modules/ora chalk@3.0.0 OK for: ora@4.1.1 want: ^3.0.0
+952 silly placeDep node_modules/cnpm cli-cursor@3.1.0 OK for: ora@4.1.1 want: ^3.1.0
+953 silly placeDep node_modules/cnpm cli-spinners@2.7.0 OK for: ora@4.1.1 want: ^2.2.0
+954 silly placeDep node_modules/cnpm is-interactive@1.0.0 OK for: ora@4.1.1 want: ^1.0.0
+955 silly placeDep node_modules/cnpm log-symbols@3.0.0 OK for: ora@4.1.1 want: ^3.0.0
+956 silly placeDep node_modules/cnpm mute-stream@0.0.8 OK for: ora@4.1.1 want: 0.0.8
+957 silly placeDep node_modules/cnpm wcwidth@1.0.1 OK for: ora@4.1.1 want: ^1.0.1
+958 silly fetch manifest ansi-styles@^4.1.0
+959 silly fetch manifest supports-color@^7.1.0
+960 silly fetch manifest restore-cursor@^3.1.0
+961 silly fetch manifest defaults@^1.0.3
+962 http fetch GET 200 https://registry.npmmirror.com/restore-cursor 50ms (cache hit)
+963 http fetch GET 200 https://registry.npmmirror.com/defaults 54ms (cache hit)
+964 timing idealTree:node_modules/cnpm/node_modules/ora Completed in 58ms
+965 silly placeDep node_modules/cnpm restore-cursor@3.1.0 OK for: cli-cursor@3.1.0 want: ^3.1.0
+966 timing idealTree:node_modules/cnpm/node_modules/cli-cursor Completed in 1ms
+967 timing idealTree:node_modules/cnpm/node_modules/cli-spinners Completed in 0ms
+968 timing idealTree:node_modules/cnpm/node_modules/is-interactive Completed in 0ms
+969 timing idealTree:node_modules/cnpm/node_modules/log-symbols Completed in 0ms
+970 timing idealTree:node_modules/cnpm/node_modules/mute-stream Completed in 0ms
+971 timing idealTree:node_modules/cnpm/node_modules/p-map Completed in 0ms
+972 silly placeDep node_modules/cnpm @npmcli/git@4.0.3 OK for: pacote@15.1.1 want: ^4.0.0
+973 silly placeDep node_modules/cnpm/node_modules/pacote npm-package-arg@10.1.0 OK for: pacote@15.1.1 want: ^10.0.0
+974 silly placeDep node_modules/cnpm npm-packlist@7.0.4 OK for: pacote@15.1.1 want: ^7.0.0
+975 silly placeDep node_modules/cnpm read-package-json@6.0.0 OK for: pacote@15.1.1 want: ^6.0.0
+976 silly placeDep node_modules/cnpm sigstore@1.0.0 OK for: pacote@15.1.1 want: ^1.0.0
+977 silly fetch manifest lru-cache@^7.4.4
+978 silly fetch manifest ignore-walk@^6.0.0
+979 silly fetch manifest make-fetch-happen@^11.0.1
+980 silly fetch manifest tuf-js@^1.0.0
+981 http fetch GET 200 https://registry.npmmirror.com/tuf-js 53ms (cache hit)
+982 http fetch GET 200 https://registry.npmmirror.com/ignore-walk 69ms (cache hit)
+983 timing idealTree:node_modules/cnpm/node_modules/pacote Completed in 74ms
+984 silly placeDep node_modules/cnpm/node_modules/@npmcli/git lru-cache@7.18.3 OK for: @npmcli/git@4.0.3 want: ^7.4.4
+985 timing idealTree:node_modules/cnpm/node_modules/@npmcli/git Completed in 1ms
+986 silly placeDep node_modules/cnpm ignore-walk@6.0.1 OK for: npm-packlist@7.0.4 want: ^6.0.0
+987 timing idealTree:node_modules/cnpm/node_modules/npm-packlist Completed in 1ms
+988 silly placeDep node_modules/cnpm/node_modules/ignore-walk minimatch@6.2.0 OK for: ignore-walk@6.0.1 want: ^6.1.6
+989 timing idealTree:node_modules/cnpm/node_modules/ignore-walk Completed in 0ms
+990 silly placeDep node_modules/cnpm just-diff@5.2.0 OK for: parse-conflict-json@3.0.0 want: ^5.0.1
+991 silly placeDep node_modules/cnpm just-diff-apply@5.5.0 OK for: parse-conflict-json@3.0.0 want: ^5.2.0
+992 timing idealTree:node_modules/cnpm/node_modules/parse-conflict-json Completed in 1ms
+993 timing idealTree:node_modules/cnpm/node_modules/just-diff Completed in 0ms
+994 timing idealTree:node_modules/cnpm/node_modules/just-diff-apply Completed in 0ms
+995 timing idealTree:node_modules/cnpm/node_modules/path-key Completed in 0ms
+996 timing idealTree:node_modules/cnpm/node_modules/path-type Completed in 0ms
+997 timing idealTree:node_modules/cnpm/node_modules/picomatch Completed in 0ms
+998 silly placeDep node_modules/cnpm cssesc@3.0.0 OK for: postcss-selector-parser@6.0.11 want: ^3.0.0
+999 silly placeDep node_modules/cnpm util-deprecate@1.0.2 OK for: postcss-selector-parser@6.0.11 want: ^1.0.2
+1000 timing idealTree:node_modules/cnpm/node_modules/postcss-selector-parser Completed in 1ms
+1001 timing idealTree:node_modules/cnpm/node_modules/cssesc Completed in 0ms
+1002 timing idealTree:node_modules/cnpm/node_modules/proc-log Completed in 0ms
+1003 timing idealTree:node_modules/cnpm/node_modules/promise-all-reject-late Completed in 0ms
+1004 timing idealTree:node_modules/cnpm/node_modules/promise-call-limit Completed in 0ms
+1005 timing idealTree:node_modules/cnpm/node_modules/promise-inflight Completed in 0ms
+1006 silly placeDep node_modules/cnpm err-code@2.0.3 OK for: promise-retry@2.0.1 want: ^2.0.2
+1007 silly placeDep node_modules/cnpm retry@0.12.0 OK for: promise-retry@2.0.1 want: ^0.12.0
+1008 timing idealTree:node_modules/cnpm/node_modules/promise-retry Completed in 2ms
+1009 timing idealTree:node_modules/cnpm/node_modules/err-code Completed in 0ms
+1010 silly placeDep node_modules/cnpm deep-extend@0.6.0 OK for: rc@1.2.8 want: ^0.6.0
+1011 silly placeDep node_modules/cnpm strip-json-comments@2.0.1 OK for: rc@1.2.8 want: ~2.0.1
+1012 timing idealTree:node_modules/cnpm/node_modules/rc Completed in 2ms
+1013 timing idealTree:node_modules/cnpm/node_modules/deep-extend Completed in 0ms
+1014 timing idealTree:node_modules/cnpm/node_modules/read-cmd-shim Completed in 0ms
+1015 timing idealTree:node_modules/cnpm/node_modules/read-package-json Completed in 0ms
+1016 timing idealTree:node_modules/cnpm/node_modules/read-package-json-fast Completed in 0ms
+1017 silly placeDep node_modules/cnpm abort-controller@3.0.0 OK for: readable-stream@4.3.0 want: ^3.0.0
+1018 silly placeDep node_modules/cnpm buffer@6.0.3 OK for: readable-stream@4.3.0 want: ^6.0.3
+1019 silly placeDep node_modules/cnpm events@3.3.0 OK for: readable-stream@4.3.0 want: ^3.3.0
+1020 silly placeDep node_modules/cnpm process@0.11.10 OK for: readable-stream@4.3.0 want: ^0.11.10
+1021 silly fetch manifest event-target-shim@^5.0.0
+1022 silly fetch manifest base64-js@^1.3.1
+1023 silly fetch manifest ieee754@^1.2.1
+1024 http fetch GET 200 https://registry.npmmirror.com/event-target-shim 56ms (cache hit)
+1025 http fetch GET 200 https://registry.npmmirror.com/base64-js 57ms (cache hit)
+1026 http fetch GET 200 https://registry.npmmirror.com/ieee754 57ms (cache hit)
+1027 timing idealTree:node_modules/cnpm/node_modules/readable-stream Completed in 60ms
+1028 silly placeDep node_modules/cnpm event-target-shim@5.0.1 OK for: abort-controller@3.0.0 want: ^5.0.0
+1029 timing idealTree:node_modules/cnpm/node_modules/abort-controller Completed in 0ms
+1030 silly placeDep node_modules/cnpm base64-js@1.5.1 OK for: buffer@6.0.3 want: ^1.3.1
+1031 silly placeDep node_modules/cnpm ieee754@1.2.1 OK for: buffer@6.0.3 want: ^1.2.1
+1032 timing idealTree:node_modules/cnpm/node_modules/buffer Completed in 0ms
+1033 timing idealTree:node_modules/cnpm/node_modules/base64-js Completed in 0ms
+1034 timing idealTree:node_modules/cnpm/node_modules/event-target-shim Completed in 0ms
+1035 timing idealTree:node_modules/cnpm/node_modules/events Completed in 0ms
+1036 timing idealTree:node_modules/cnpm/node_modules/ieee754 Completed in 0ms
+1037 timing idealTree:node_modules/cnpm/node_modules/process Completed in 0ms
+1038 timing idealTree:node_modules/cnpm/node_modules/restore-cursor Completed in 0ms
+1039 timing idealTree:node_modules/cnpm/node_modules/retry Completed in 0ms
+1040 timing idealTree:node_modules/cnpm/node_modules/reusify Completed in 0ms
+1041 silly placeDep node_modules/cnpm/node_modules/rimraf glob@7.2.3 OK for: rimraf@3.0.2 want: ^7.1.3
+1042 timing idealTree:node_modules/cnpm/node_modules/rimraf Completed in 0ms
+1043 silly placeDep node_modules/cnpm queue-microtask@1.2.3 OK for: run-parallel@1.2.0 want: ^1.2.2
+1044 timing idealTree:node_modules/cnpm/node_modules/run-parallel Completed in 0ms
+1045 timing idealTree:node_modules/cnpm/node_modules/queue-microtask Completed in 0ms
+1046 timing idealTree:node_modules/cnpm/node_modules/safer-buffer Completed in 0ms
+1047 silly placeDep node_modules/cnpm/node_modules/semver lru-cache@6.0.0 OK for: semver@7.3.8 want: ^6.0.0
+1048 timing idealTree:node_modules/cnpm/node_modules/semver Completed in 1ms
+1049 timing idealTree:node_modules/cnpm/node_modules/set-blocking Completed in 0ms
+1050 timing idealTree:node_modules/cnpm/node_modules/signal-exit Completed in 0ms
+1051 silly placeDep node_modules/cnpm/node_modules/sigstore make-fetch-happen@11.0.3 OK for: sigstore@1.0.0 want: ^11.0.1
+1052 silly placeDep node_modules/cnpm tuf-js@1.1.1 OK for: sigstore@1.0.0 want: ^1.0.0
+1053 silly fetch manifest @tufjs/models@1.0.0
+1054 http fetch GET 200 https://registry.npmmirror.com/@tufjs%2fmodels 53ms (cache hit)
+1055 timing idealTree:node_modules/cnpm/node_modules/sigstore Completed in 57ms
+1056 timing idealTree:node_modules/cnpm/node_modules/slash Completed in 0ms
+1057 silly placeDep node_modules/cnpm socks@2.7.1 OK for: socks-proxy-agent@7.0.0 want: ^2.6.2
+1058 silly fetch manifest ip@^2.0.0
+1059 silly fetch manifest smart-buffer@^4.2.0
+1060 http fetch GET 200 https://registry.npmmirror.com/smart-buffer 68ms (cache hit)
+1061 timing idealTree:node_modules/cnpm/node_modules/socks-proxy-agent Completed in 71ms
+1062 silly placeDep node_modules/cnpm ip@2.0.0 OK for: socks@2.7.1 want: ^2.0.0
+1063 silly placeDep node_modules/cnpm smart-buffer@4.2.0 OK for: socks@2.7.1 want: ^4.2.0
+1064 timing idealTree:node_modules/cnpm/node_modules/socks Completed in 1ms
+1065 timing idealTree:node_modules/cnpm/node_modules/ip Completed in 0ms
+1066 timing idealTree:node_modules/cnpm/node_modules/smart-buffer Completed in 0ms
+1067 timing idealTree:node_modules/cnpm/node_modules/ssri Completed in 0ms
+1068 silly placeDep node_modules/cnpm emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+1069 silly placeDep node_modules/cnpm is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+1070 timing idealTree:node_modules/cnpm/node_modules/string-width Completed in 1ms
+1071 timing idealTree:node_modules/cnpm/node_modules/emoji-regex Completed in 0ms
+1072 timing idealTree:node_modules/cnpm/node_modules/is-fullwidth-code-point Completed in 0ms
+1073 silly placeDep node_modules/cnpm ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+1074 timing idealTree:node_modules/cnpm/node_modules/strip-ansi Completed in 1ms
+1075 timing idealTree:node_modules/cnpm/node_modules/ansi-regex Completed in 0ms
+1076 timing idealTree:node_modules/cnpm/node_modules/strip-final-newline Completed in 0ms
+1077 timing idealTree:node_modules/cnpm/node_modules/strip-json-comments Completed in 0ms
+1078 silly placeDep node_modules/cnpm has-flag@3.0.0 OK for: supports-color@5.5.0 want: ^3.0.0
+1079 timing idealTree:node_modules/cnpm/node_modules/supports-color Completed in 0ms
+1080 timing idealTree:node_modules/cnpm/node_modules/has-flag Completed in 0ms
+1081 silly placeDep node_modules/cnpm/node_modules/tar fs-minipass@2.1.0 OK for: tar@6.1.13 want: ^2.0.0
+1082 timing idealTree:node_modules/cnpm/node_modules/tar Completed in 0ms
+1083 silly placeDep node_modules/cnpm is-number@7.0.0 OK for: to-regex-range@5.0.1 want: ^7.0.0
+1084 timing idealTree:node_modules/cnpm/node_modules/to-regex-range Completed in 1ms
+1085 timing idealTree:node_modules/cnpm/node_modules/is-number Completed in 0ms
+1086 timing idealTree:node_modules/cnpm/node_modules/treeverse Completed in 0ms
+1087 silly placeDep node_modules/cnpm @tufjs/models@1.0.0 OK for: tuf-js@1.1.1 want: 1.0.0
+1088 silly placeDep node_modules/cnpm/node_modules/tuf-js make-fetch-happen@11.0.3 OK for: tuf-js@1.1.1 want: ^11.0.1
+1089 silly fetch manifest minimatch@^6.1.0
+1090 timing idealTree:node_modules/cnpm/node_modules/tuf-js Completed in 3ms
+1091 silly placeDep node_modules/cnpm/node_modules/@tufjs/models minimatch@6.2.0 OK for: @tufjs/models@1.0.0 want: ^6.1.0
+1092 timing idealTree:node_modules/cnpm/node_modules/@tufjs/models Completed in 1ms
+1093 silly placeDep node_modules/cnpm unique-slug@4.0.0 OK for: unique-filename@3.0.0 want: ^4.0.0
+1094 timing idealTree:node_modules/cnpm/node_modules/unique-filename Completed in 0ms
+1095 silly placeDep node_modules/cnpm imurmurhash@0.1.4 OK for: unique-slug@4.0.0 want: ^0.1.4
+1096 timing idealTree:node_modules/cnpm/node_modules/unique-slug Completed in 1ms
+1097 timing idealTree:node_modules/cnpm/node_modules/imurmurhash Completed in 0ms
+1098 timing idealTree:node_modules/cnpm/node_modules/universalify Completed in 0ms
+1099 silly placeDep node_modules/cnpm default-user-agent@1.0.0 OK for: urllib@3.11.0 want: ^1.0.0
+1100 silly placeDep node_modules/cnpm digest-header@1.0.0 OK for: urllib@3.11.0 want: ^1.0.0
+1101 silly placeDep node_modules/cnpm form-data-encoder@1.7.2 OK for: urllib@3.11.0 want: ^1.7.2
+1102 silly placeDep node_modules/cnpm formdata-node@4.4.1 OK for: urllib@3.11.0 want: ^4.3.3
+1103 silly placeDep node_modules/cnpm formstream@1.1.1 OK for: urllib@3.11.0 want: ^1.1.1
+1104 silly placeDep node_modules/cnpm mime-types@2.1.35 OK for: urllib@3.11.0 want: ^2.1.35
+1105 silly placeDep node_modules/cnpm pump@3.0.0 OK for: urllib@3.11.0 want: ^3.0.0
+1106 silly placeDep node_modules/cnpm undici@5.20.0 OK for: urllib@3.11.0 want: ^5.6.0
+1107 silly fetch manifest os-name@~1.0.3
+1108 silly fetch manifest utility@^1.17.0
+1109 silly fetch manifest node-domexception@1.0.0
+1110 silly fetch manifest web-streams-polyfill@4.0.0-beta.3
+1111 silly fetch manifest mime@^2.5.2
+1112 silly fetch manifest pause-stream@~0.0.11
+1113 silly fetch manifest mime-db@1.52.0
+1114 silly fetch manifest end-of-stream@^1.1.0
+1115 silly fetch manifest busboy@^1.6.0
+1116 http fetch GET 200 https://registry.npmmirror.com/mime-db 65ms (cache hit)
+1117 http fetch GET 200 https://registry.npmmirror.com/pause-stream 66ms (cache hit)
+1118 http fetch GET 200 https://registry.npmmirror.com/web-streams-polyfill 68ms (cache hit)
+1119 http fetch GET 200 https://registry.npmmirror.com/end-of-stream 68ms (cache hit)
+1120 http fetch GET 200 https://registry.npmmirror.com/os-name 71ms (cache hit)
+1121 http fetch GET 200 https://registry.npmmirror.com/mime 71ms (cache hit)
+1122 http fetch GET 200 https://registry.npmmirror.com/node-domexception 73ms (cache hit)
+1123 http fetch GET 200 https://registry.npmmirror.com/busboy 71ms (cache hit)
+1124 timing idealTree:node_modules/cnpm/node_modules/urllib Completed in 78ms
+1125 silly placeDep node_modules/cnpm os-name@1.0.3 OK for: default-user-agent@1.0.0 want: ~1.0.3
+1126 silly fetch manifest osx-release@^1.0.0
+1127 silly fetch manifest win-release@^1.0.0
+1128 http fetch GET 200 https://registry.npmmirror.com/win-release 49ms (cache hit)
+1129 http fetch GET 200 https://registry.npmmirror.com/osx-release 51ms (cache hit)
+1130 timing idealTree:node_modules/cnpm/node_modules/default-user-agent Completed in 52ms
+1131 silly placeDep node_modules/cnpm utility@1.17.0 OK for: digest-header@1.0.0 want: ^1.17.0
+1132 silly fetch manifest copy-to@^2.0.1
+1133 silly fetch manifest escape-html@^1.0.3
+1134 silly fetch manifest mkdirp@^0.5.1
+1135 silly fetch manifest mz@^2.7.0
+1136 silly fetch manifest unescape@^1.0.1
+1137 http fetch GET 200 https://registry.npmmirror.com/unescape 49ms (cache hit)
+1138 http fetch GET 200 https://registry.npmmirror.com/copy-to 52ms (cache hit)
+1139 http fetch GET 200 https://registry.npmmirror.com/escape-html 52ms (cache hit)
+1140 http fetch GET 200 https://registry.npmmirror.com/mz 54ms (cache hit)
+1141 timing idealTree:node_modules/cnpm/node_modules/digest-header Completed in 56ms
+1142 timing idealTree:node_modules/cnpm/node_modules/form-data-encoder Completed in 0ms
+1143 silly placeDep node_modules/cnpm node-domexception@1.0.0 OK for: formdata-node@4.4.1 want: 1.0.0
+1144 silly placeDep node_modules/cnpm web-streams-polyfill@4.0.0-beta.3 OK for: formdata-node@4.4.1 want: 4.0.0-beta.3
+1145 timing idealTree:node_modules/cnpm/node_modules/formdata-node Completed in 2ms
+1146 silly placeDep node_modules/cnpm mime@2.6.0 OK for: formstream@1.1.1 want: ^2.5.2
+1147 silly placeDep node_modules/cnpm pause-stream@0.0.11 OK for: formstream@1.1.1 want: ~0.0.11
+1148 silly fetch manifest through@~2.3
+1149 http fetch GET 200 https://registry.npmmirror.com/through 70ms (cache hit)
+1150 timing idealTree:node_modules/cnpm/node_modules/formstream Completed in 71ms
+1151 timing idealTree:node_modules/cnpm/node_modules/mime Completed in 0ms
+1152 silly placeDep node_modules/cnpm mime-db@1.52.0 OK for: mime-types@2.1.35 want: 1.52.0
+1153 timing idealTree:node_modules/cnpm/node_modules/mime-types Completed in 1ms
+1154 timing idealTree:node_modules/cnpm/node_modules/mime-db Completed in 0ms
+1155 timing idealTree:node_modules/cnpm/node_modules/node-domexception Completed in 0ms
+1156 silly placeDep node_modules/cnpm osx-release@1.1.0 OK for: os-name@1.0.3 want: ^1.0.0
+1157 silly placeDep node_modules/cnpm win-release@1.1.1 OK for: os-name@1.0.3 want: ^1.0.0
+1158 silly fetch manifest semver@^5.0.1
+1159 timing idealTree:node_modules/cnpm/node_modules/os-name Completed in 3ms
+1160 timing idealTree:node_modules/cnpm/node_modules/osx-release Completed in 0ms
+1161 silly placeDep node_modules/cnpm through@2.3.8 OK for: pause-stream@0.0.11 want: ~2.3
+1162 timing idealTree:node_modules/cnpm/node_modules/pause-stream Completed in 1ms
+1163 silly placeDep node_modules/cnpm end-of-stream@1.4.4 OK for: pump@3.0.0 want: ^1.1.0
+1164 timing idealTree:node_modules/cnpm/node_modules/pump Completed in 1ms
+1165 timing idealTree:node_modules/cnpm/node_modules/end-of-stream Completed in 0ms
+1166 timing idealTree:node_modules/cnpm/node_modules/through Completed in 0ms
+1167 silly placeDep node_modules/cnpm busboy@1.6.0 OK for: undici@5.20.0 want: ^1.6.0
+1168 silly fetch manifest streamsearch@^1.1.0
+1169 http fetch GET 200 https://registry.npmmirror.com/streamsearch 52ms (cache hit)
+1170 timing idealTree:node_modules/cnpm/node_modules/undici Completed in 55ms
+1171 silly placeDep node_modules/cnpm streamsearch@1.1.0 OK for: busboy@1.6.0 want: ^1.1.0
+1172 timing idealTree:node_modules/cnpm/node_modules/busboy Completed in 1ms
+1173 timing idealTree:node_modules/cnpm/node_modules/streamsearch Completed in 0ms
+1174 timing idealTree:node_modules/cnpm/node_modules/util-deprecate Completed in 0ms
+1175 silly placeDep node_modules/cnpm copy-to@2.0.1 OK for: utility@1.17.0 want: ^2.0.1
+1176 silly placeDep node_modules/cnpm escape-html@1.0.3 OK for: utility@1.17.0 want: ^1.0.3
+1177 silly placeDep node_modules/cnpm/node_modules/utility mkdirp@0.5.6 OK for: utility@1.17.0 want: ^0.5.1
+1178 silly placeDep node_modules/cnpm mz@2.7.0 OK for: utility@1.17.0 want: ^2.7.0
+1179 silly placeDep node_modules/cnpm unescape@1.0.1 OK for: utility@1.17.0 want: ^1.0.1
+1180 silly fetch manifest any-promise@^1.0.0
+1181 silly fetch manifest object-assign@^4.0.1
+1182 silly fetch manifest thenify-all@^1.0.0
+1183 silly fetch manifest extend-shallow@^2.0.1
+1184 http fetch GET 200 https://registry.npmmirror.com/object-assign 55ms (cache hit)
+1185 http fetch GET 200 https://registry.npmmirror.com/extend-shallow 54ms (cache hit)
+1186 http fetch GET 200 https://registry.npmmirror.com/thenify-all 62ms (cache hit)
+1187 timing idealTree:node_modules/cnpm/node_modules/utility Completed in 66ms
+1188 timing idealTree:node_modules/cnpm/node_modules/copy-to Completed in 0ms
+1189 timing idealTree:node_modules/cnpm/node_modules/escape-html Completed in 0ms
+1190 silly placeDep node_modules/cnpm any-promise@1.3.0 OK for: mz@2.7.0 want: ^1.0.0
+1191 silly placeDep node_modules/cnpm object-assign@4.1.1 OK for: mz@2.7.0 want: ^4.0.1
+1192 silly placeDep node_modules/cnpm thenify-all@1.6.0 OK for: mz@2.7.0 want: ^1.0.0
+1193 silly fetch manifest thenify@>= 3.1.0 < 4
+1194 http fetch GET 200 https://registry.npmmirror.com/thenify 50ms (cache hit)
+1195 timing idealTree:node_modules/cnpm/node_modules/mz Completed in 52ms
+1196 timing idealTree:node_modules/cnpm/node_modules/any-promise Completed in 0ms
+1197 timing idealTree:node_modules/cnpm/node_modules/object-assign Completed in 0ms
+1198 silly placeDep node_modules/cnpm thenify@3.3.1 OK for: thenify-all@1.6.0 want: >= 3.1.0 < 4
+1199 timing idealTree:node_modules/cnpm/node_modules/thenify-all Completed in 0ms
+1200 timing idealTree:node_modules/cnpm/node_modules/thenify Completed in 0ms
+1201 silly placeDep node_modules/cnpm extend-shallow@2.0.1 OK for: unescape@1.0.1 want: ^2.0.1
+1202 silly fetch manifest is-extendable@^0.1.0
+1203 http fetch GET 200 https://registry.npmmirror.com/is-extendable 60ms (cache hit)
+1204 timing idealTree:node_modules/cnpm/node_modules/unescape Completed in 61ms
+1205 silly placeDep node_modules/cnpm is-extendable@0.1.1 OK for: extend-shallow@2.0.1 want: ^0.1.0
+1206 timing idealTree:node_modules/cnpm/node_modules/extend-shallow Completed in 1ms
+1207 timing idealTree:node_modules/cnpm/node_modules/is-extendable Completed in 0ms
+1208 silly placeDep node_modules/cnpm spdx-correct@3.2.0 OK for: validate-npm-package-license@3.0.4 want: ^3.0.0
+1209 silly placeDep node_modules/cnpm spdx-expression-parse@3.0.1 OK for: validate-npm-package-license@3.0.4 want: ^3.0.0
+1210 silly fetch manifest spdx-license-ids@^3.0.0
+1211 silly fetch manifest spdx-exceptions@^2.1.0
+1212 http fetch GET 200 https://registry.npmmirror.com/spdx-exceptions 53ms (cache hit)
+1213 http fetch GET 200 https://registry.npmmirror.com/spdx-license-ids 57ms (cache hit)
+1214 timing idealTree:node_modules/cnpm/node_modules/validate-npm-package-license Completed in 58ms
+1215 silly placeDep node_modules/cnpm spdx-license-ids@3.0.12 OK for: spdx-correct@3.2.0 want: ^3.0.0
+1216 timing idealTree:node_modules/cnpm/node_modules/spdx-correct Completed in 1ms
+1217 silly placeDep node_modules/cnpm spdx-exceptions@2.3.0 OK for: spdx-expression-parse@3.0.1 want: ^2.1.0
+1218 timing idealTree:node_modules/cnpm/node_modules/spdx-expression-parse Completed in 0ms
+1219 timing idealTree:node_modules/cnpm/node_modules/spdx-exceptions Completed in 0ms
+1220 timing idealTree:node_modules/cnpm/node_modules/spdx-license-ids Completed in 0ms
+1221 silly placeDep node_modules/cnpm builtins@1.0.3 OK for: validate-npm-package-name@3.0.0 want: ^1.0.3
+1222 timing idealTree:node_modules/cnpm/node_modules/validate-npm-package-name Completed in 1ms
+1223 timing idealTree:node_modules/cnpm/node_modules/builtins Completed in 0ms
+1224 timing idealTree:node_modules/cnpm/node_modules/walk-up-path Completed in 0ms
+1225 silly placeDep node_modules/cnpm defaults@1.0.4 OK for: wcwidth@1.0.1 want: ^1.0.3
+1226 silly fetch manifest clone@^1.0.2
+1227 http fetch GET 200 https://registry.npmmirror.com/clone 58ms (cache hit)
+1228 timing idealTree:node_modules/cnpm/node_modules/wcwidth Completed in 59ms
+1229 silly placeDep node_modules/cnpm clone@1.0.4 OK for: defaults@1.0.4 want: ^1.0.2
+1230 timing idealTree:node_modules/cnpm/node_modules/defaults Completed in 1ms
+1231 timing idealTree:node_modules/cnpm/node_modules/clone Completed in 0ms
+1232 timing idealTree:node_modules/cnpm/node_modules/web-streams-polyfill Completed in 0ms
+1233 silly placeDep node_modules/cnpm isexe@2.0.0 OK for: which@3.0.0 want: ^2.0.0
+1234 timing idealTree:node_modules/cnpm/node_modules/which Completed in 1ms
+1235 timing idealTree:node_modules/cnpm/node_modules/isexe Completed in 0ms
+1236 timing idealTree:node_modules/cnpm/node_modules/wide-align Completed in 0ms
+1237 silly placeDep node_modules/cnpm/node_modules/win-release semver@5.7.1 OK for: win-release@1.1.1 want: ^5.0.1
+1238 timing idealTree:node_modules/cnpm/node_modules/win-release Completed in 2ms
+1239 timing idealTree:node_modules/cnpm/node_modules/wrappy Completed in 0ms
+1240 silly placeDep node_modules/cnpm is-typedarray@1.0.0 OK for: write-file-atomic@3.0.3 want: ^1.0.0
+1241 silly placeDep node_modules/cnpm typedarray-to-buffer@3.1.5 OK for: write-file-atomic@3.0.3 want: ^3.1.5
+1242 timing idealTree:node_modules/cnpm/node_modules/write-file-atomic Completed in 1ms
+1243 timing idealTree:node_modules/cnpm/node_modules/is-typedarray Completed in 0ms
+1244 timing idealTree:node_modules/cnpm/node_modules/typedarray-to-buffer Completed in 0ms
+1245 timing idealTree:node_modules/cnpm/node_modules/yallist Completed in 0ms
+1246 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist cmd-shim@6.0.1 OK for: bin-links@4.0.1 want: ^6.0.0
+1247 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist read-cmd-shim@4.0.0 OK for: bin-links@4.0.1 want: ^4.0.0
+1248 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist write-file-atomic@5.0.0 OK for: bin-links@4.0.1 want: ^5.0.0
+1249 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/bin-links Completed in 2ms
+1250 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/cmd-shim Completed in 0ms
+1251 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist brace-expansion@2.0.1 OK for: minimatch@6.2.0 want: ^2.0.1
+1252 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/minimatch Completed in 1ms
+1253 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/brace-expansion Completed in 0ms
+1254 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist validate-npm-package-name@5.0.0 OK for: npm-package-arg@10.1.0 want: ^5.0.0
+1255 silly fetch manifest builtins@^5.0.0
+1256 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/npm-package-arg Completed in 1ms
+1257 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/read-cmd-shim Completed in 0ms
+1258 silly placeDep node_modules/cnpm/node_modules/@npmcli/arborist builtins@5.0.1 OK for: validate-npm-package-name@5.0.0 want: ^5.0.0
+1259 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/validate-npm-package-name Completed in 0ms
+1260 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/builtins Completed in 0ms
+1261 timing idealTree:node_modules/cnpm/node_modules/@npmcli/arborist/node_modules/write-file-atomic Completed in 0ms
+1262 timing idealTree:node_modules/cnpm/node_modules/@npmcli/git/node_modules/lru-cache Completed in 0ms
+1263 silly placeDep node_modules/cnpm/node_modules/@npmcli/map-workspaces brace-expansion@2.0.1 OK for: minimatch@6.2.0 want: ^2.0.1
+1264 timing idealTree:node_modules/cnpm/node_modules/@npmcli/map-workspaces/node_modules/minimatch Completed in 0ms
+1265 timing idealTree:node_modules/cnpm/node_modules/@npmcli/map-workspaces/node_modules/brace-expansion Completed in 0ms
+1266 silly placeDep node_modules/cnpm/node_modules/@tufjs/models brace-expansion@2.0.1 OK for: minimatch@6.2.0 want: ^2.0.1
+1267 timing idealTree:node_modules/cnpm/node_modules/@tufjs/models/node_modules/minimatch Completed in 0ms
+1268 timing idealTree:node_modules/cnpm/node_modules/@tufjs/models/node_modules/brace-expansion Completed in 0ms
+1269 timing idealTree:node_modules/cnpm/node_modules/bin-links/node_modules/npm-normalize-package-bin Completed in 0ms
+1270 timing idealTree:node_modules/cnpm/node_modules/cacache/node_modules/lru-cache Completed in 0ms
+1271 silly placeDep node_modules/cnpm aggregate-error@3.1.0 OK for: p-map@4.0.0 want: ^3.0.0
+1272 silly fetch manifest clean-stack@^2.0.0
+1273 silly fetch manifest indent-string@^4.0.0
+1274 http fetch GET 200 https://registry.npmmirror.com/indent-string 53ms (cache hit)
+1275 http fetch GET 200 https://registry.npmmirror.com/clean-stack 54ms (cache hit)
+1276 timing idealTree:node_modules/cnpm/node_modules/cacache/node_modules/p-map Completed in 56ms
+1277 silly placeDep node_modules/cnpm clean-stack@2.2.0 OK for: aggregate-error@3.1.0 want: ^2.0.0
+1278 silly placeDep node_modules/cnpm indent-string@4.0.0 OK for: aggregate-error@3.1.0 want: ^4.0.0
+1279 timing idealTree:node_modules/cnpm/node_modules/aggregate-error Completed in 3ms
+1280 timing idealTree:node_modules/cnpm/node_modules/clean-stack Completed in 0ms
+1281 timing idealTree:node_modules/cnpm/node_modules/indent-string Completed in 0ms
+1282 silly placeDep node_modules/cnpm shebang-command@2.0.0 OK for: cross-spawn@7.0.3 want: ^2.0.0
+1283 silly placeDep node_modules/cnpm/node_modules/execa which@2.0.2 OK for: cross-spawn@7.0.3 want: ^2.0.1
+1284 silly fetch manifest shebang-regex@^3.0.0
+1285 http fetch GET 200 https://registry.npmmirror.com/shebang-regex 48ms (cache hit)
+1286 timing idealTree:node_modules/cnpm/node_modules/execa/node_modules/cross-spawn Completed in 50ms
+1287 silly placeDep node_modules/cnpm shebang-regex@3.0.0 OK for: shebang-command@2.0.0 want: ^3.0.0
+1288 timing idealTree:node_modules/cnpm/node_modules/shebang-command Completed in 1ms
+1289 timing idealTree:node_modules/cnpm/node_modules/shebang-regex Completed in 0ms
+1290 timing idealTree:node_modules/cnpm/node_modules/execa/node_modules/which Completed in 0ms
+1291 silly placeDep node_modules/cnpm/node_modules/glob brace-expansion@2.0.1 OK for: minimatch@5.1.6 want: ^2.0.1
+1292 timing idealTree:node_modules/cnpm/node_modules/glob/node_modules/minimatch Completed in 0ms
+1293 timing idealTree:node_modules/cnpm/node_modules/glob/node_modules/brace-expansion Completed in 0ms
+1294 timing idealTree:node_modules/cnpm/node_modules/hosted-git-info/node_modules/lru-cache Completed in 0ms
+1295 silly placeDep node_modules/cnpm/node_modules/ignore-walk brace-expansion@2.0.1 OK for: minimatch@6.2.0 want: ^2.0.1
+1296 timing idealTree:node_modules/cnpm/node_modules/ignore-walk/node_modules/minimatch Completed in 1ms
+1297 timing idealTree:node_modules/cnpm/node_modules/ignore-walk/node_modules/brace-expansion Completed in 0ms
+1298 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen @npmcli/fs@2.1.2 OK for: cacache@16.1.3 want: ^2.1.0
+1299 silly placeDep node_modules/cnpm @npmcli/move-file@2.0.1 OK for: cacache@16.1.3 want: ^2.0.0
+1300 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen fs-minipass@2.1.0 OK for: cacache@16.1.3 want: ^2.1.0
+1301 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen p-map@4.0.0 OK for: cacache@16.1.3 want: ^4.0.0
+1302 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen unique-filename@2.0.1 OK for: cacache@16.1.3 want: ^2.0.0
+1303 silly fetch manifest @gar/promisify@^1.1.3
+1304 silly fetch manifest unique-slug@^3.0.0
+1305 http fetch GET 200 https://registry.npmmirror.com/@gar%2fpromisify 48ms (cache hit)
+1306 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/cacache Completed in 51ms
+1307 timing idealTree:node_modules/cnpm/node_modules/@npmcli/move-file Completed in 0ms
+1308 silly placeDep node_modules/cnpm @gar/promisify@1.1.3 OK for: @npmcli/fs@2.1.2 want: ^1.1.3
+1309 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/@npmcli/fs Completed in 0ms
+1310 timing idealTree:node_modules/cnpm/node_modules/@gar/promisify Completed in 0ms
+1311 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/fs-minipass Completed in 0ms
+1312 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/lru-cache Completed in 0ms
+1313 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/minipass Completed in 0ms
+1314 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/p-map Completed in 0ms
+1315 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/ssri Completed in 0ms
+1316 silly placeDep node_modules/cnpm/node_modules/make-fetch-happen unique-slug@3.0.0 OK for: unique-filename@2.0.1 want: ^3.0.0
+1317 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/unique-filename Completed in 0ms
+1318 timing idealTree:node_modules/cnpm/node_modules/make-fetch-happen/node_modules/unique-slug Completed in 0ms
+1319 timing idealTree:node_modules/cnpm/node_modules/minipass-collect/node_modules/minipass Completed in 0ms
+1320 timing idealTree:node_modules/cnpm/node_modules/minipass-fetch/node_modules/minipass Completed in 0ms
+1321 timing idealTree:node_modules/cnpm/node_modules/minipass-flush/node_modules/minipass Completed in 0ms
+1322 timing idealTree:node_modules/cnpm/node_modules/minipass-json-stream/node_modules/minipass Completed in 0ms
+1323 timing idealTree:node_modules/cnpm/node_modules/minipass-pipeline/node_modules/minipass Completed in 0ms
+1324 timing idealTree:node_modules/cnpm/node_modules/minipass-sized/node_modules/minipass Completed in 0ms
+1325 timing idealTree:node_modules/cnpm/node_modules/minizlib/node_modules/minipass Completed in 0ms
+1326 silly placeDep node_modules/cnpm path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+1327 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/glob Completed in 1ms
+1328 timing idealTree:node_modules/cnpm/node_modules/path-is-absolute Completed in 0ms
+1329 silly placeDep node_modules/cnpm/node_modules/node-gyp abbrev@1.1.1 OK for: nopt@6.0.0 want: ^1.0.0
+1330 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/nopt Completed in 0ms
+1331 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/abbrev Completed in 0ms
+1332 silly placeDep node_modules/cnpm/node_modules/node-gyp are-we-there-yet@3.0.1 OK for: npmlog@6.0.2 want: ^3.0.0
+1333 silly placeDep node_modules/cnpm/node_modules/node-gyp gauge@4.0.4 OK for: npmlog@6.0.2 want: ^4.0.3
+1334 silly fetch manifest readable-stream@^3.6.0
+1335 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/npmlog Completed in 3ms
+1336 silly placeDep node_modules/cnpm/node_modules/node-gyp readable-stream@3.6.1 OK for: are-we-there-yet@3.0.1 want: ^3.6.0
+1337 silly fetch manifest string_decoder@^1.1.1
+1338 http fetch GET 200 https://registry.npmmirror.com/string_decoder 54ms (cache hit)
+1339 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/are-we-there-yet Completed in 55ms
+1340 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/gauge Completed in 0ms
+1341 silly placeDep node_modules/cnpm string_decoder@1.3.0 OK for: readable-stream@3.6.1 want: ^1.1.1
+1342 silly fetch manifest safe-buffer@~5.2.0
+1343 http fetch GET 200 https://registry.npmmirror.com/safe-buffer 53ms (cache hit)
+1344 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/readable-stream Completed in 57ms
+1345 silly placeDep node_modules/cnpm safe-buffer@5.2.1 OK for: string_decoder@1.3.0 want: ~5.2.0
+1346 timing idealTree:node_modules/cnpm/node_modules/string_decoder Completed in 0ms
+1347 timing idealTree:node_modules/cnpm/node_modules/safe-buffer Completed in 0ms
+1348 timing idealTree:node_modules/cnpm/node_modules/node-gyp/node_modules/which Completed in 0ms
+1349 silly placeDep node_modules/cnpm/node_modules/npm-package-arg lru-cache@6.0.0 OK for: hosted-git-info@4.1.0 want: ^6.0.0
+1350 timing idealTree:node_modules/cnpm/node_modules/npm-package-arg/node_modules/hosted-git-info Completed in 1ms
+1351 timing idealTree:node_modules/cnpm/node_modules/npm-package-arg/node_modules/lru-cache Completed in 0ms
+1352 silly placeDep node_modules/cnpm/node_modules/npm-pick-manifest validate-npm-package-name@5.0.0 OK for: npm-package-arg@10.1.0 want: ^5.0.0
+1353 timing idealTree:node_modules/cnpm/node_modules/npm-pick-manifest/node_modules/npm-package-arg Completed in 1ms
+1354 silly placeDep node_modules/cnpm/node_modules/npm-pick-manifest builtins@5.0.1 OK for: validate-npm-package-name@5.0.0 want: ^5.0.0
+1355 timing idealTree:node_modules/cnpm/node_modules/npm-pick-manifest/node_modules/validate-npm-package-name Completed in 1ms
+1356 timing idealTree:node_modules/cnpm/node_modules/npm-pick-manifest/node_modules/builtins Completed in 0ms
+1357 silly placeDep node_modules/cnpm/node_modules/npm-registry-fetch lru-cache@7.18.3 OK for: make-fetch-happen@11.0.3 want: ^7.7.1
+1358 timing idealTree:node_modules/cnpm/node_modules/npm-registry-fetch/node_modules/make-fetch-happen Completed in 0ms
+1359 timing idealTree:node_modules/cnpm/node_modules/npm-registry-fetch/node_modules/lru-cache Completed in 0ms
+1360 timing idealTree:node_modules/cnpm/node_modules/npm-registry-fetch/node_modules/minipass-fetch Completed in 0ms
+1361 silly placeDep node_modules/cnpm/node_modules/npm-registry-fetch validate-npm-package-name@5.0.0 OK for: npm-package-arg@10.1.0 want: ^5.0.0
+1362 timing idealTree:node_modules/cnpm/node_modules/npm-registry-fetch/node_modules/npm-package-arg Completed in 1ms
+1363 silly placeDep node_modules/cnpm/node_modules/npm-registry-fetch builtins@5.0.1 OK for: validate-npm-package-name@5.0.0 want: ^5.0.0
+1364 timing idealTree:node_modules/cnpm/node_modules/npm-registry-fetch/node_modules/validate-npm-package-name Completed in 1ms
+1365 timing idealTree:node_modules/cnpm/node_modules/npm-registry-fetch/node_modules/builtins Completed in 0ms
+1366 silly placeDep node_modules/cnpm content-type@1.0.5 OK for: urllib@2.40.0 want: ^1.0.2
+1367 silly placeDep node_modules/cnpm/node_modules/npm-request debug@2.6.9 OK for: urllib@2.40.0 want: ^2.6.9
+1368 silly placeDep node_modules/cnpm ee-first@1.1.1 OK for: urllib@2.40.0 want: ~1.1.1
+1369 silly placeDep node_modules/cnpm/node_modules/npm-request iconv-lite@0.4.24 OK for: urllib@2.40.0 want: ^0.4.15
+1370 silly placeDep node_modules/cnpm/node_modules/npm-request ip@1.1.8 OK for: urllib@2.40.0 want: ^1.1.5
+1371 silly placeDep node_modules/cnpm proxy-agent@5.0.0 OK for: urllib@2.40.0 want: ^5.0.0
+1372 silly placeDep node_modules/cnpm qs@6.11.1 OK for: urllib@2.40.0 want: ^6.4.0
+1373 silly placeDep node_modules/cnpm statuses@1.5.0 OK for: urllib@2.40.0 want: ^1.3.1
+1374 silly fetch manifest ms@2.0.0
+1375 silly fetch manifest http-proxy-agent@^4.0.0
+1376 silly fetch manifest lru-cache@^5.1.1
+1377 silly fetch manifest pac-proxy-agent@^5.0.0
+1378 silly fetch manifest proxy-from-env@^1.0.0
+1379 silly fetch manifest socks-proxy-agent@^5.0.0
+1380 silly fetch manifest side-channel@^1.0.4
+1381 http fetch GET 200 https://registry.npmmirror.com/proxy-from-env 55ms (cache hit)
+1382 http fetch GET 200 https://registry.npmmirror.com/side-channel 57ms (cache hit)
+1383 http fetch GET 200 https://registry.npmmirror.com/pac-proxy-agent 58ms (cache hit)
+1384 timing idealTree:node_modules/cnpm/node_modules/npm-request/node_modules/urllib Completed in 63ms
+1385 timing idealTree:node_modules/cnpm/node_modules/content-type Completed in 0ms
+1386 timing idealTree:node_modules/cnpm/node_modules/ee-first Completed in 0ms
+1387 silly placeDep node_modules/cnpm/node_modules/proxy-agent http-proxy-agent@4.0.1 OK for: proxy-agent@5.0.0 want: ^4.0.0
+1388 silly placeDep node_modules/cnpm/node_modules/proxy-agent lru-cache@5.1.1 OK for: proxy-agent@5.0.0 want: ^5.1.1
+1389 silly placeDep node_modules/cnpm pac-proxy-agent@5.0.0 OK for: proxy-agent@5.0.0 want: ^5.0.0
+1390 silly placeDep node_modules/cnpm proxy-from-env@1.1.0 OK for: proxy-agent@5.0.0 want: ^1.0.0
+1391 silly placeDep node_modules/cnpm/node_modules/proxy-agent socks-proxy-agent@5.0.1 OK for: proxy-agent@5.0.0 want: ^5.0.0
+1392 silly fetch manifest @tootallnate/once@1
+1393 silly fetch manifest yallist@^3.0.2
+1394 silly fetch manifest get-uri@3
+1395 silly fetch manifest http-proxy-agent@^4.0.1
+1396 silly fetch manifest pac-resolver@^5.0.0
+1397 silly fetch manifest raw-body@^2.2.0
+1398 silly fetch manifest socks-proxy-agent@5
+1399 http fetch GET 200 https://registry.npmmirror.com/raw-body 57ms (cache hit)
+1400 http fetch GET 200 https://registry.npmmirror.com/pac-resolver 58ms (cache hit)
+1401 http fetch GET 200 https://registry.npmmirror.com/get-uri 59ms (cache hit)
+1402 timing idealTree:node_modules/cnpm/node_modules/proxy-agent Completed in 64ms
+1403 silly placeDep node_modules/cnpm/node_modules/pac-proxy-agent @tootallnate/once@1.1.2 OK for: pac-proxy-agent@5.0.0 want: 1
+1404 silly placeDep node_modules/cnpm get-uri@3.0.2 OK for: pac-proxy-agent@5.0.0 want: 3
+1405 silly placeDep node_modules/cnpm/node_modules/pac-proxy-agent http-proxy-agent@4.0.1 OK for: pac-proxy-agent@5.0.0 want: ^4.0.1
+1406 silly placeDep node_modules/cnpm pac-resolver@5.0.1 OK for: pac-proxy-agent@5.0.0 want: ^5.0.0
+1407 silly placeDep node_modules/cnpm raw-body@2.5.2 OK for: pac-proxy-agent@5.0.0 want: ^2.2.0
+1408 silly placeDep node_modules/cnpm/node_modules/pac-proxy-agent socks-proxy-agent@5.0.1 OK for: pac-proxy-agent@5.0.0 want: 5
+1409 silly fetch manifest data-uri-to-buffer@3
+1410 silly fetch manifest file-uri-to-path@2
+1411 silly fetch manifest fs-extra@^8.1.0
+1412 silly fetch manifest ftp@^0.3.10
+1413 silly fetch manifest degenerator@^3.0.2
+1414 silly fetch manifest netmask@^2.0.2
+1415 silly fetch manifest http-errors@2.0.0
+1416 silly fetch manifest iconv-lite@0.4.24
+1417 silly fetch manifest unpipe@1.0.0
+1418 http fetch GET 200 https://registry.npmmirror.com/degenerator 65ms (cache hit)
+1419 http fetch GET 200 https://registry.npmmirror.com/netmask 65ms (cache hit)
+1420 http fetch GET 200 https://registry.npmmirror.com/file-uri-to-path 66ms (cache hit)
+1421 http fetch GET 200 https://registry.npmmirror.com/http-errors 65ms (cache hit)
+1422 http fetch GET 200 https://registry.npmmirror.com/unpipe 65ms (cache hit)
+1423 http fetch GET 200 https://registry.npmmirror.com/data-uri-to-buffer 68ms (cache hit)
+1424 http fetch GET 200 https://registry.npmmirror.com/ftp 91ms (cache hit)
+1425 timing idealTree:node_modules/cnpm/node_modules/pac-proxy-agent Completed in 95ms
+1426 silly placeDep node_modules/cnpm/node_modules/get-uri @tootallnate/once@1.1.2 OK for: get-uri@3.0.2 want: 1
+1427 silly placeDep node_modules/cnpm data-uri-to-buffer@3.0.1 OK for: get-uri@3.0.2 want: 3
+1428 silly placeDep node_modules/cnpm file-uri-to-path@2.0.0 OK for: get-uri@3.0.2 want: 2
+1429 silly placeDep node_modules/cnpm/node_modules/get-uri fs-extra@8.1.0 OK for: get-uri@3.0.2 want: ^8.1.0
+1430 silly placeDep node_modules/cnpm ftp@0.3.10 OK for: get-uri@3.0.2 want: ^0.3.10
+1431 silly fetch manifest xregexp@2.0.0
+1432 silly fetch manifest readable-stream@1.1.x
+1433 http fetch GET 200 https://registry.npmmirror.com/xregexp 50ms (cache hit)
+1434 timing idealTree:node_modules/cnpm/node_modules/get-uri Completed in 54ms
+1435 timing idealTree:node_modules/cnpm/node_modules/data-uri-to-buffer Completed in 0ms
+1436 timing idealTree:node_modules/cnpm/node_modules/file-uri-to-path Completed in 0ms
+1437 silly placeDep node_modules/cnpm/node_modules/ftp readable-stream@1.1.14 OK for: ftp@0.3.10 want: 1.1.x
+1438 silly placeDep node_modules/cnpm xregexp@2.0.0 OK for: ftp@0.3.10 want: 2.0.0
+1439 silly fetch manifest core-util-is@~1.0.0
+1440 silly fetch manifest isarray@0.0.1
+1441 silly fetch manifest string_decoder@~0.10.x
+1442 http fetch GET 200 https://registry.npmmirror.com/core-util-is 48ms (cache hit)
+1443 http fetch GET 200 https://registry.npmmirror.com/isarray 49ms (cache hit)
+1444 timing idealTree:node_modules/cnpm/node_modules/ftp Completed in 51ms
+1445 silly placeDep node_modules/cnpm degenerator@3.0.2 OK for: pac-resolver@5.0.1 want: ^3.0.2
+1446 silly placeDep node_modules/cnpm/node_modules/pac-resolver ip@1.1.8 OK for: pac-resolver@5.0.1 want: ^1.1.5
+1447 silly placeDep node_modules/cnpm netmask@2.0.2 OK for: pac-resolver@5.0.1 want: ^2.0.2
+1448 silly fetch manifest ast-types@^0.13.2
+1449 silly fetch manifest escodegen@^1.8.1
+1450 silly fetch manifest esprima@^4.0.0
+1451 silly fetch manifest vm2@^3.9.8
+1452 http fetch GET 200 https://registry.npmmirror.com/vm2 55ms (cache hit)
+1453 http fetch GET 200 https://registry.npmmirror.com/esprima 56ms (cache hit)
+1454 http fetch GET 200 https://registry.npmmirror.com/ast-types 57ms (cache hit)
+1455 http fetch GET 200 https://registry.npmmirror.com/escodegen 59ms (cache hit)
+1456 timing idealTree:node_modules/cnpm/node_modules/pac-resolver Completed in 62ms
+1457 silly placeDep node_modules/cnpm ast-types@0.13.4 OK for: degenerator@3.0.2 want: ^0.13.2
+1458 silly placeDep node_modules/cnpm escodegen@1.14.3 OK for: degenerator@3.0.2 want: ^1.8.1
+1459 silly placeDep node_modules/cnpm esprima@4.0.1 OK for: degenerator@3.0.2 want: ^4.0.0
+1460 silly placeDep node_modules/cnpm vm2@3.9.14 OK for: degenerator@3.0.2 want: ^3.9.8
+1461 silly fetch manifest tslib@^2.0.1
+1462 silly fetch manifest estraverse@^4.2.0
+1463 silly fetch manifest esutils@^2.0.2
+1464 silly fetch manifest optionator@^0.8.1
+1465 silly fetch manifest source-map@~0.6.1
+1466 silly fetch manifest acorn@^8.7.0
+1467 silly fetch manifest acorn-walk@^8.2.0
+1468 http fetch GET 200 https://registry.npmmirror.com/tslib 61ms (cache hit)
+1469 http fetch GET 200 https://registry.npmmirror.com/esutils 60ms (cache hit)
+1470 http fetch GET 200 https://registry.npmmirror.com/source-map 59ms (cache hit)
+1471 http fetch GET 200 https://registry.npmmirror.com/acorn 60ms (cache hit)
+1472 http fetch GET 200 https://registry.npmmirror.com/estraverse 63ms (cache hit)
+1473 http fetch GET 200 https://registry.npmmirror.com/optionator 62ms (cache hit)
+1474 http fetch GET 200 https://registry.npmmirror.com/acorn-walk 65ms (cache hit)
+1475 timing idealTree:node_modules/cnpm/node_modules/degenerator Completed in 70ms
+1476 silly placeDep node_modules/cnpm tslib@2.5.0 OK for: ast-types@0.13.4 want: ^2.0.1
+1477 timing idealTree:node_modules/cnpm/node_modules/ast-types Completed in 0ms
+1478 silly placeDep node_modules/cnpm estraverse@4.3.0 OK for: escodegen@1.14.3 want: ^4.2.0
+1479 silly placeDep node_modules/cnpm esutils@2.0.3 OK for: escodegen@1.14.3 want: ^2.0.2
+1480 silly placeDep node_modules/cnpm optionator@0.8.3 OK for: escodegen@1.14.3 want: ^0.8.1
+1481 silly placeDep node_modules/cnpm source-map@0.6.1 OK for: escodegen@1.14.3 want: ~0.6.1
+1482 silly fetch manifest prelude-ls@~1.1.2
+1483 silly fetch manifest deep-is@~0.1.3
+1484 silly fetch manifest word-wrap@~1.2.3
+1485 silly fetch manifest type-check@~0.3.2
+1486 silly fetch manifest levn@~0.3.0
+1487 silly fetch manifest fast-levenshtein@~2.0.6
+1488 http fetch GET 200 https://registry.npmmirror.com/prelude-ls 53ms (cache hit)
+1489 http fetch GET 200 https://registry.npmmirror.com/word-wrap 57ms (cache hit)
+1490 http fetch GET 200 https://registry.npmmirror.com/deep-is 59ms (cache hit)
+1491 http fetch GET 200 https://registry.npmmirror.com/fast-levenshtein 60ms (cache hit)
+1492 http fetch GET 200 https://registry.npmmirror.com/type-check 62ms (cache hit)
+1493 http fetch GET 200 https://registry.npmmirror.com/levn 62ms (cache hit)
+1494 timing idealTree:node_modules/cnpm/node_modules/escodegen Completed in 66ms
+1495 timing idealTree:node_modules/cnpm/node_modules/esprima Completed in 0ms
+1496 timing idealTree:node_modules/cnpm/node_modules/estraverse Completed in 0ms
+1497 timing idealTree:node_modules/cnpm/node_modules/esutils Completed in 0ms
+1498 timing idealTree:node_modules/cnpm/node_modules/netmask Completed in 0ms
+1499 silly placeDep node_modules/cnpm deep-is@0.1.4 OK for: optionator@0.8.3 want: ~0.1.3
+1500 silly placeDep node_modules/cnpm fast-levenshtein@2.0.6 OK for: optionator@0.8.3 want: ~2.0.6
+1501 silly placeDep node_modules/cnpm levn@0.3.0 OK for: optionator@0.8.3 want: ~0.3.0
+1502 silly placeDep node_modules/cnpm prelude-ls@1.1.2 OK for: optionator@0.8.3 want: ~1.1.2
+1503 silly placeDep node_modules/cnpm type-check@0.3.2 OK for: optionator@0.8.3 want: ~0.3.2
+1504 silly placeDep node_modules/cnpm word-wrap@1.2.3 OK for: optionator@0.8.3 want: ~1.2.3
+1505 timing idealTree:node_modules/cnpm/node_modules/optionator Completed in 3ms
+1506 timing idealTree:node_modules/cnpm/node_modules/deep-is Completed in 0ms
+1507 timing idealTree:node_modules/cnpm/node_modules/fast-levenshtein Completed in 0ms
+1508 timing idealTree:node_modules/cnpm/node_modules/levn Completed in 0ms
+1509 timing idealTree:node_modules/cnpm/node_modules/prelude-ls Completed in 0ms
+1510 timing idealTree:node_modules/cnpm/node_modules/proxy-from-env Completed in 0ms
+1511 silly placeDep node_modules/cnpm side-channel@1.0.4 OK for: qs@6.11.1 want: ^1.0.4
+1512 silly fetch manifest call-bind@^1.0.0
+1513 silly fetch manifest get-intrinsic@^1.0.2
+1514 silly fetch manifest object-inspect@^1.9.0
+1515 http fetch GET 200 https://registry.npmmirror.com/call-bind 49ms (cache hit)
+1516 http fetch GET 200 https://registry.npmmirror.com/object-inspect 50ms (cache hit)
+1517 http fetch GET 200 https://registry.npmmirror.com/get-intrinsic 67ms (cache hit)
+1518 timing idealTree:node_modules/cnpm/node_modules/qs Completed in 70ms
+1519 silly placeDep node_modules/cnpm http-errors@2.0.0 OK for: raw-body@2.5.2 want: 2.0.0
+1520 silly placeDep node_modules/cnpm/node_modules/raw-body iconv-lite@0.4.24 OK for: raw-body@2.5.2 want: 0.4.24
+1521 silly placeDep node_modules/cnpm unpipe@1.0.0 OK for: raw-body@2.5.2 want: 1.0.0
+1522 silly fetch manifest setprototypeof@1.2.0
+1523 silly fetch manifest statuses@2.0.1
+1524 silly fetch manifest toidentifier@1.0.1
+1525 http fetch GET 200 https://registry.npmmirror.com/setprototypeof 50ms (cache hit)
+1526 http fetch GET 200 https://registry.npmmirror.com/toidentifier 50ms (cache hit)
+1527 timing idealTree:node_modules/cnpm/node_modules/raw-body Completed in 53ms
+1528 silly placeDep node_modules/cnpm setprototypeof@1.2.0 OK for: http-errors@2.0.0 want: 1.2.0
+1529 silly placeDep node_modules/cnpm/node_modules/http-errors statuses@2.0.1 OK for: http-errors@2.0.0 want: 2.0.1
+1530 silly placeDep node_modules/cnpm toidentifier@1.0.1 OK for: http-errors@2.0.0 want: 1.0.1
+1531 timing idealTree:node_modules/cnpm/node_modules/http-errors Completed in 1ms
+1532 timing idealTree:node_modules/cnpm/node_modules/setprototypeof Completed in 0ms
+1533 silly placeDep node_modules/cnpm call-bind@1.0.2 OK for: side-channel@1.0.4 want: ^1.0.0
+1534 silly placeDep node_modules/cnpm get-intrinsic@1.2.0 OK for: side-channel@1.0.4 want: ^1.0.2
+1535 silly placeDep node_modules/cnpm object-inspect@1.12.3 OK for: side-channel@1.0.4 want: ^1.9.0
+1536 silly fetch manifest has-symbols@^1.0.3
+1537 http fetch GET 200 https://registry.npmmirror.com/has-symbols 54ms (cache hit)
+1538 timing idealTree:node_modules/cnpm/node_modules/side-channel Completed in 57ms
+1539 timing idealTree:node_modules/cnpm/node_modules/call-bind Completed in 0ms
+1540 silly placeDep node_modules/cnpm has-symbols@1.0.3 OK for: get-intrinsic@1.2.0 want: ^1.0.3
+1541 timing idealTree:node_modules/cnpm/node_modules/get-intrinsic Completed in 1ms
+1542 timing idealTree:node_modules/cnpm/node_modules/has-symbols Completed in 0ms
+1543 timing idealTree:node_modules/cnpm/node_modules/object-inspect Completed in 0ms
+1544 timing idealTree:node_modules/cnpm/node_modules/source-map Completed in 0ms
+1545 timing idealTree:node_modules/cnpm/node_modules/statuses Completed in 0ms
+1546 timing idealTree:node_modules/cnpm/node_modules/toidentifier Completed in 0ms
+1547 timing idealTree:node_modules/cnpm/node_modules/tslib Completed in 0ms
+1548 timing idealTree:node_modules/cnpm/node_modules/type-check Completed in 0ms
+1549 timing idealTree:node_modules/cnpm/node_modules/unpipe Completed in 0ms
+1550 silly placeDep node_modules/cnpm acorn@8.8.2 OK for: vm2@3.9.14 want: ^8.7.0
+1551 silly placeDep node_modules/cnpm acorn-walk@8.2.0 OK for: vm2@3.9.14 want: ^8.2.0
+1552 timing idealTree:node_modules/cnpm/node_modules/vm2 Completed in 1ms
+1553 timing idealTree:node_modules/cnpm/node_modules/acorn Completed in 0ms
+1554 timing idealTree:node_modules/cnpm/node_modules/acorn-walk Completed in 0ms
+1555 timing idealTree:node_modules/cnpm/node_modules/word-wrap Completed in 0ms
+1556 timing idealTree:node_modules/cnpm/node_modules/xregexp Completed in 0ms
+1557 silly placeDep node_modules/cnpm core-util-is@1.0.3 OK for: readable-stream@1.1.14 want: ~1.0.0
+1558 silly placeDep node_modules/cnpm isarray@0.0.1 OK for: readable-stream@1.1.14 want: 0.0.1
+1559 silly placeDep node_modules/cnpm/node_modules/ftp string_decoder@0.10.31 OK for: readable-stream@1.1.14 want: ~0.10.x
+1560 timing idealTree:node_modules/cnpm/node_modules/ftp/node_modules/readable-stream Completed in 4ms
+1561 timing idealTree:node_modules/cnpm/node_modules/core-util-is Completed in 0ms
+1562 timing idealTree:node_modules/cnpm/node_modules/isarray Completed in 0ms
+1563 timing idealTree:node_modules/cnpm/node_modules/ftp/node_modules/string_decoder Completed in 0ms
+1564 timing idealTree:node_modules/cnpm/node_modules/get-uri/node_modules/@tootallnate/once Completed in 0ms
+1565 timing idealTree:node_modules/cnpm/node_modules/get-uri/node_modules/fs-extra Completed in 0ms
+1566 timing idealTree:node_modules/cnpm/node_modules/http-errors/node_modules/statuses Completed in 0ms
+1567 silly placeDep node_modules/cnpm/node_modules/npm-request ms@2.0.0 OK for: debug@2.6.9 want: 2.0.0
+1568 timing idealTree:node_modules/cnpm/node_modules/npm-request/node_modules/debug Completed in 1ms
+1569 timing idealTree:node_modules/cnpm/node_modules/npm-request/node_modules/iconv-lite Completed in 0ms
+1570 timing idealTree:node_modules/cnpm/node_modules/npm-request/node_modules/ip Completed in 0ms
+1571 timing idealTree:node_modules/cnpm/node_modules/npm-request/node_modules/ms Completed in 0ms
+1572 silly placeDep node_modules/cnpm/node_modules/ora ansi-styles@4.3.0 OK for: chalk@3.0.0 want: ^4.1.0
+1573 silly placeDep node_modules/cnpm/node_modules/ora supports-color@7.2.0 OK for: chalk@3.0.0 want: ^7.1.0
+1574 silly fetch manifest color-convert@^2.0.1
+1575 silly fetch manifest has-flag@^4.0.0
+1576 timing idealTree:node_modules/cnpm/node_modules/ora/node_modules/chalk Completed in 1ms
+1577 silly placeDep node_modules/cnpm/node_modules/ora color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+1578 silly fetch manifest color-name@~1.1.4
+1579 timing idealTree:node_modules/cnpm/node_modules/ora/node_modules/ansi-styles Completed in 1ms
+1580 silly placeDep node_modules/cnpm/node_modules/ora color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+1581 timing idealTree:node_modules/cnpm/node_modules/ora/node_modules/color-convert Completed in 0ms
+1582 timing idealTree:node_modules/cnpm/node_modules/ora/node_modules/color-name Completed in 0ms
+1583 silly placeDep node_modules/cnpm/node_modules/ora has-flag@4.0.0 OK for: supports-color@7.2.0 want: ^4.0.0
+1584 timing idealTree:node_modules/cnpm/node_modules/ora/node_modules/supports-color Completed in 1ms
+1585 timing idealTree:node_modules/cnpm/node_modules/ora/node_modules/has-flag Completed in 0ms
+1586 timing idealTree:node_modules/cnpm/node_modules/pac-proxy-agent/node_modules/@tootallnate/once Completed in 0ms
+1587 timing idealTree:node_modules/cnpm/node_modules/pac-proxy-agent/node_modules/http-proxy-agent Completed in 0ms
+1588 timing idealTree:node_modules/cnpm/node_modules/pac-proxy-agent/node_modules/socks-proxy-agent Completed in 0ms
+1589 timing idealTree:node_modules/cnpm/node_modules/pac-resolver/node_modules/ip Completed in 0ms
+1590 silly placeDep node_modules/cnpm/node_modules/pacote validate-npm-package-name@5.0.0 OK for: npm-package-arg@10.1.0 want: ^5.0.0
+1591 timing idealTree:node_modules/cnpm/node_modules/pacote/node_modules/npm-package-arg Completed in 1ms
+1592 silly placeDep node_modules/cnpm/node_modules/pacote builtins@5.0.1 OK for: validate-npm-package-name@5.0.0 want: ^5.0.0
+1593 timing idealTree:node_modules/cnpm/node_modules/pacote/node_modules/validate-npm-package-name Completed in 0ms
+1594 timing idealTree:node_modules/cnpm/node_modules/pacote/node_modules/builtins Completed in 0ms
+1595 silly placeDep node_modules/cnpm/node_modules/proxy-agent @tootallnate/once@1.1.2 OK for: http-proxy-agent@4.0.1 want: 1
+1596 timing idealTree:node_modules/cnpm/node_modules/proxy-agent/node_modules/http-proxy-agent Completed in 1ms
+1597 timing idealTree:node_modules/cnpm/node_modules/proxy-agent/node_modules/@tootallnate/once Completed in 0ms
+1598 silly placeDep node_modules/cnpm/node_modules/proxy-agent yallist@3.1.1 OK for: lru-cache@5.1.1 want: ^3.0.2
+1599 timing idealTree:node_modules/cnpm/node_modules/proxy-agent/node_modules/lru-cache Completed in 0ms
+1600 timing idealTree:node_modules/cnpm/node_modules/proxy-agent/node_modules/socks-proxy-agent Completed in 0ms
+1601 timing idealTree:node_modules/cnpm/node_modules/proxy-agent/node_modules/yallist Completed in 0ms
+1602 timing idealTree:node_modules/cnpm/node_modules/raw-body/node_modules/iconv-lite Completed in 0ms
+1603 timing idealTree:node_modules/cnpm/node_modules/rimraf/node_modules/glob Completed in 0ms
+1604 timing idealTree:node_modules/cnpm/node_modules/semver/node_modules/lru-cache Completed in 0ms
+1605 silly placeDep node_modules/cnpm/node_modules/sigstore lru-cache@7.18.3 OK for: make-fetch-happen@11.0.3 want: ^7.7.1
+1606 silly placeDep node_modules/cnpm/node_modules/sigstore minipass-fetch@3.0.1 OK for: make-fetch-happen@11.0.3 want: ^3.0.0
+1607 timing idealTree:node_modules/cnpm/node_modules/sigstore/node_modules/make-fetch-happen Completed in 1ms
+1608 timing idealTree:node_modules/cnpm/node_modules/sigstore/node_modules/lru-cache Completed in 0ms
+1609 timing idealTree:node_modules/cnpm/node_modules/sigstore/node_modules/minipass-fetch Completed in 0ms
+1610 silly placeDep node_modules/cnpm/node_modules/tar/node_modules/fs-minipass minipass@3.3.6 OK for: fs-minipass@2.1.0 want: ^3.0.0
+1611 timing idealTree:node_modules/cnpm/node_modules/tar/node_modules/fs-minipass Completed in 0ms
+1612 silly placeDep node_modules/cnpm/node_modules/tuf-js lru-cache@7.18.3 OK for: make-fetch-happen@11.0.3 want: ^7.7.1
+1613 silly placeDep node_modules/cnpm/node_modules/tuf-js minipass-fetch@3.0.1 OK for: make-fetch-happen@11.0.3 want: ^3.0.0
+1614 timing idealTree:node_modules/cnpm/node_modules/tuf-js/node_modules/make-fetch-happen Completed in 1ms
+1615 timing idealTree:node_modules/cnpm/node_modules/tuf-js/node_modules/lru-cache Completed in 0ms
+1616 timing idealTree:node_modules/cnpm/node_modules/tuf-js/node_modules/minipass-fetch Completed in 0ms
+1617 timing idealTree:node_modules/cnpm/node_modules/utility/node_modules/mkdirp Completed in 0ms
+1618 timing idealTree:node_modules/cnpm/node_modules/win-release/node_modules/semver Completed in 0ms
+1619 timing idealTree:node_modules/cnpm/node_modules/tar/node_modules/fs-minipass/node_modules/minipass Completed in 0ms
+1620 timing idealTree:buildDeps Completed in 5567ms
+1621 timing idealTree:fixDepFlags Completed in 2ms
+1622 timing idealTree Completed in 5583ms
+1623 timing reify:loadTrees Completed in 5661ms
+1624 timing reify:diffTrees Completed in 5ms
+1625 silly reify mark retired [ 'D:\\nodejs\\node_cache\\node_modules\\cnpm' ]
+1626 silly reify moves {
+1626 silly reify   'D:\\nodejs\\node_cache\\node_modules\\cnpm': 'D:\\nodejs\\node_cache\\node_modules\\.cnpm-fdr6Irv8'
+1626 silly reify }
+1627 timing reify:retireShallow Completed in 1313ms
+1628 timing reify:createSparse Completed in 223ms
+1629 silly tarball no local data for npm@https://registry.npmmirror.com/npm/-/npm-8.19.4.tgz. Extracting by manifest.
+1630 verbose stack Error: 23704:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:677:
+1630 verbose stack
+1631 verbose cwd C:\Users\zyg
+1632 verbose Windows_NT 10.0.19044
+1633 verbose node v16.18.1
+1634 verbose npm  v8.19.2
+1635 error code ERR_SSL_DECRYPTION_FAILED_OR_BAD_RECORD_MAC
+1636 error 23704:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:677:
+1636 error
+1637 verbose exit 1
+1638 timing npm Completed in 8818ms
+1639 verbose unfinished npm timer command:install 1678179817016
+1640 verbose unfinished npm timer reify 1678179817018
+1641 verbose unfinished npm timer reify:loadBundles 1678179824230
+1642 verbose unfinished npm timer reifyNode:node_modules/cnpm/node_modules/npm 1678179824230
+1643 verbose unfinished npm timer reify:rollback:createSparse 1678179825647
+1644 verbose code 1
+1645 error A complete log of this run can be found in:
+1645 error     D:\configuration\nodejs\node_cache\_logs\2023-03-07T09_03_36_834Z-debug-0.log
